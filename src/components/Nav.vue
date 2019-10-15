@@ -11,7 +11,7 @@ export default {
   name: 'Nav',
 }
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 #nav {
   padding: 30px;
   a {

@@ -19,7 +19,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style lang="scss">
    .overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom   {
     background: #ddd6f3 !important;
 }
