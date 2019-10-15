@@ -5,7 +5,6 @@
   </div>
   <div class='menu'>
     <div class="nav-link">
-      <span class="menu-close">×</span>
       <router-link to="/">
         <div class='menu-item menu-child1'>Home</div>
       </router-link>
@@ -33,6 +32,7 @@
           </svg>
         </a>
       </div>
+      <span class="menu-close">×</span>
 
     </div>
   </div>
@@ -100,10 +100,12 @@ export default {
 </script>
 
 <style lang="scss">
-
+* {
+  box-sizing: border-box !important;
+}
 .hamburger {
   position: absolute;
-  top: 50vh;
+  bottom: 5vh;
   left: 3vw;
   z-index: 5;
   transition: left .3s;
@@ -117,11 +119,13 @@ export default {
   cursor: pointer;
 }
 .line {
-  bottom: 30px;
-  left: 30px;
+  padding: 10px 0;
   font-size: 1.5em;
-  background: #fff !important;
+  background: rgba(255, 255, 255, .5) !important;
   border-bottom: 2px solid #2c3e4f;
+          transform: rotate3d(0, 0, 1, -90deg);
+
+  -webkit-transform: rotate3d(0, 0, 1, -90deg);
 }
 
 .menu {
@@ -201,14 +205,13 @@ export default {
 
 
 @media screen and (min-width: 1080px) {
+  .hamburger {
+    top: 50vh;
+    left: 3vw;
+  }
   .line {
-    // position: fixed;
     font-size: 1.5em;
-    background: #fff !important;
     border-bottom: 2px solid #2c3e4f;
-            transform: rotate3d(0, 0, 1, -90deg);
-
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
   }
 
   .menu {
@@ -226,63 +229,6 @@ export default {
     a {
       color: #fff;
       text-decoration: none;
-    }
-  }
-
-  // .menu-child1 {
-  //   margin-top: 180px !important;
-  // }
-  .menu-item {
-    margin-bottom: 30px !important;
-  }
-
-  .menu--open {
-    left: 0;
-  }
-
-  .menu-item {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1rem 3rem;
-    color: #fff;
-  }
-
-  .menu-item:hover {
-    color: rgb(43, 43, 43) !important;
-    background: #fff;
-    transition: .5s;
-    cursor: pointer;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 6rem;
-
-    &__link {
-      display: inline-block;
-      margin-right: 1.5rem;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    &__svg {
-      width: 1.2rem;
-      height: 1.2rem;
-      color: #fff;
-      opacity: .6;
-
-      &:hover {
-        width: 1.5rem;
-        height: 1.5rem;
-        color: #3feeab;
-        transition: .3s !important;
-      }
     }
   }
 }
