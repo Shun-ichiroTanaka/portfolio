@@ -1,46 +1,54 @@
 <template>
-  <div id="app">
-    <Nav></Nav>
-    <go-top></go-top>
+<div id="app">
+  <Nav></Nav>
+  <go-top></go-top>
+  <vue-page-transition name="overlay-up-down">
+    <router-view />
+  </vue-page-transition>
 
-    <vue-page-transition name="overlay-up-down">
-      <router-view/>
-    </vue-page-transition>
-
-  </div>
+</div>
 </template>
-
 
 <script>
 import Nav from '@/components/Nav.vue'
 import GoTop from '@inotom/vue-go-top';
 
 export default {
-    components: {
-      Nav,
-      GoTop
-  }
+  components: {
+    Nav,
+    GoTop
+  },
+
 }
 </script>
 
-
 <style lang="scss">
-   .overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom   {
+  .overlay-left,
+  .overlay-right,
+  .overlay-top,
+  .overlay-bottom {
     background: #7fdbd0 !important;
-    z-index: 6;
-}
-:root {
-  // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3
-   --overlay-bg: #ddd6f3 !important;
-   --transition-duration: .5s !important;
- }
-#app {
-  color: #2c3e50;
-  font-family: "Nunito", sans-serif !important;
-  text-align: center;
+    z-index: 1000;
+  }
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  :root {
+    // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3
+    --overlay-bg: #ddd6f3 !important;
+    --transition-duration: .5s !important;
+  }
+
+  #app {
+    color: #2c3e50;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+<style lang="scss">
+@media screen and (min-width: 1080px) {
 }
 
+@media screen and (min-width: 768px) {
+
+}
 </style>
