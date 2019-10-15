@@ -15,6 +15,11 @@ Vue.use(VuePageTransition)
 import VuePlyr from 'vue-plyr';
 import 'vue-plyr/dist/vue-plyr.css';
 Vue.use(VuePlyr)
+
+import VueTyperPlugin from 'vue-typer'
+Vue.use(VueTyperPlugin)
+
+
 // ==================================================== その他ライブラリ読込
 
 new Vue({

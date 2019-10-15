@@ -1,23 +1,29 @@
 <template>
 <div id="app">
-    <div class="particles">
+        <div class="particles">
         <div id="particles-js">
             <div id="main" class="has-text-centered">
-                <vue-typed-js
-                    :strings="[
-                            'Do it. Just Do it.',
-                            'Dont let your dreams be dreams.',
-                            'Yesterday, you said tomorrow. So just do it!',
-                            'Make your dreams come true!',
-                            'Some people dream success.',
-                            'while you are gonna wake up and work hard any!',
-                            'Nothing is impossible!',
-                            'You should get to the point where anyone else will quit and you are not gonna stop there',
-                            'If you are tired of starting over, stop giving up'
-                        ]"
-                    :loop="true" @onComplete="doSmth()">
-                    <h1><span class="typing"></span></h1>
-                </vue-typed-js>
+                <vue-typer
+                  :text='[
+                      "俺の名前はサトシ。",
+                      "マサラタウンに住むポケモントレーナーだ。",
+                      "相棒の名前はピカチュウ。",
+                      "ライバルの名前はシゲル。",
+                      "シゲルはいいやつだがモテすぎて気に入らない。",
+                      "俺の彼女のカスミの元彼でもある。"
+                    ]'
+                  :repeat='Infinity'
+                  :shuffle='false'
+                  initial-action='typing'
+                  :pre-type-delay='100'
+                  :type-delay='100'
+                  :pre-erase-delay='1500'
+                  :erase-delay='50'
+                  erase-style='backspace'
+                  :erase-on-complete='true'
+                  caret-animation='smooth'
+                  id="vue-typer"
+                ></vue-typer>
             </div>
         </div>
     </div>
@@ -26,6 +32,7 @@
 
 <script>
 import 'particles.js'
+
 export default {
   name: "HomeParticle",
   mounted() {
@@ -146,6 +153,10 @@ export default {
                 "retina_detect": true
             })
     }
+  },
+  components: {
+  },
+  props: {
   }
 }
 </script>
@@ -174,5 +185,9 @@ h1 {
 #particles-js {
   width: 100%;
   height: 100%;
+}
+#vue-typer {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
+  font-size: 3rem;
 }
 </style>
