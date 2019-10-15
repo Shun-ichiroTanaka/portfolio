@@ -2,6 +2,8 @@
 <div id="app">
     <div class="particles">
     <div id="particles-js">
+      <span id="time">{{ $moment().format('YYYY/MM/DD HH:mm')}}</span>
+      <div id="author-name">©︎All Rights are reserved by Shun-ichiro Tanaka</div>
         <div id="main" class="has-text-centered">
           <h1>Welcome to My Portfolio</h1>
           <h2>I
@@ -167,6 +169,7 @@ export default {
 html,
 body,
 #app {
+  box-sizing: border-box !important;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -184,8 +187,8 @@ body,
   transform: translateY(-50%) translateX(-50%);
 }
 h1 {
-  font-size: 4em;
-  // white-space: nowrap;
+  font-size: 5em;
+  white-space: nowrap;
 }
 h2 {
   font-size: 3em;
@@ -204,5 +207,20 @@ h2 {
     // word-spacing: 15px !important;
     // white-space: nowrap;
   }
+}
+#time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#author-name {
+  position: absolute;
+  top: 50vh;
+  right: -100px;
+  word-spacing: 10px;
+  border-bottom: 2px solid #2c3e4f;
+          transform: rotate3d(0, 0, 1, -90deg);
+
+  -webkit-transform: rotate3d(0, 0, 1, -90deg);
 }
 </style>

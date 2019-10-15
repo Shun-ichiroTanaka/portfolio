@@ -25,6 +25,9 @@ import jQuery from 'jquery'
 global.jquery = jQuery
 global.$ = jQuery
 window.$ = window.jQuery = require('jquery')
+
+import moment from 'vue-moment'
+Vue.use(moment)
 // ==================================================== その他ライブラリ読込
 
 new Vue({

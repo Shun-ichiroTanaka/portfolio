@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
    .overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom   {
-    background: #2deda7 !important;
+    background: #7fdbd0 !important;
     z-index: 6;
 }
 :root {
