@@ -6,6 +6,8 @@ Vue.config.productionTip = false
 // ==================================================== component読込
 Vue.component('Nav', require('./components/Nav.vue').default);
 
+
+
 // ==================================================== component読込
 
 // ==================================================== その他ライブラリ読込
@@ -18,8 +20,6 @@ Vue.use(VuePlyr)
 
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
-
-
 // ==================================================== その他ライブラリ読込
 
 new Vue({

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav></Nav>
+    <go-top></go-top>
     <vue-page-transition name="overlay-up-down">
       <router-view/>
     </vue-page-transition>
@@ -10,10 +10,12 @@
 
 <script>
 import Nav from '@/components/Nav.vue'
+import GoTop from '@inotom/vue-go-top';
 
 export default {
     components: {
-      Nav
+      Nav,
+      GoTop
   }
 }
 </script>
@@ -36,4 +38,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 </style>
