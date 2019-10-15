@@ -12,6 +12,7 @@
     "core-js": "^2.6.5",
     "epic-spinners": "^1.1.0",
     "fullpage.js": "^3.0.7",
+    "jquery": "^3.4.1",
     "particles.js": "2.0.0",
     "typed.js": "^2.0.11",
     "vue": "^2.6.10",

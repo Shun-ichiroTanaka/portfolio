@@ -1,9 +1,12 @@
 <template>
   <div id="app">
+    <Nav></Nav>
     <go-top></go-top>
+
     <vue-page-transition name="overlay-up-down">
       <router-view/>
     </vue-page-transition>
+
   </div>
 </template>
 
@@ -23,7 +26,8 @@ export default {
 
 <style lang="scss">
    .overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom   {
-    background: #ddd6f3 !important;
+    background: #2deda7 !important;
+    z-index: 6;
 }
 :root {
   // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3

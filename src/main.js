@@ -21,7 +21,10 @@ Vue.use(VuePlyr)
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
 
-
+import jQuery from 'jquery'
+global.jquery = jQuery
+global.$ = jQuery
+window.$ = window.jQuery = require('jquery')
 // ==================================================== その他ライブラリ読込
 
 new Vue({

@@ -1,6 +1,5 @@
 <template>
   <div id="app" >
-      <Nav></Nav>
 <main>
   <div id="player">
       <video
