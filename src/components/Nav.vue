@@ -119,13 +119,10 @@ export default {
   cursor: pointer;
 }
 .line {
-  padding: 10px 0;
+  padding: 10px;
   font-size: 1.5em;
-  background: rgba(255, 255, 255, .5) !important;
+  background: rgba(255, 255, 255, .01) !important;
   border-bottom: 2px solid #2c3e4f;
-          transform: rotate3d(0, 0, 1, -90deg);
-
-  -webkit-transform: rotate3d(0, 0, 1, -90deg);
 }
 
 .menu {
@@ -212,6 +209,9 @@ export default {
   .line {
     font-size: 1.5em;
     border-bottom: 2px solid #2c3e4f;
+            transform: rotate3d(0, 0, 1, -90deg);
+
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
   }
 
   .menu {
