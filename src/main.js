@@ -20,6 +20,8 @@ Vue.use(VuePlyr)
 
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
+
+
 // ==================================================== その他ライブラリ読込
 
 new Vue({
