@@ -30,11 +30,13 @@ import moment from 'vue-moment'
 Vue.use(moment)
 
 import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css'
+import 'vuesax/dist/vuesax.css' //Vuesax styles
 Vue.use(Vuesax)
 
 import VuePreview from 'vue-preview'
 Vue.use(VuePreview)
+
+import 'particles.js'
 // ==================================================== その他ライブラリ読込
 
 new Vue({

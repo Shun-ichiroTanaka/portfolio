@@ -8,9 +8,9 @@
         <h1>Welcome to My Portfolio</h1>
         <h2>I
           <vue-typer :text='[
-                  " am a Fronted Engineer.",
-                  " like sports, especially baseball and soccer.",
-                  " have been studying Laravel, Vue.js, and React",
+                  " am a Fronted Engineer",
+                  " like sports, especially　 Baseball and Soccer",
+                  " have　been　studying　 　Laravel, Javascript",
                 ]' :repeat='Infinity' :shuffle='false' initial-action='typing' :pre-type-delay='100' :type-delay='100' :pre-erase-delay='1500' :erase-delay='20' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth' id="vue-typer"></vue-typer>
         </h2>
       </div>
@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import 'particles.js'
-
 export default {
   name: "HomeParticle",
   mounted() {
@@ -144,11 +142,7 @@ export default {
         "retina_detect": true
       })
     }
-  },
-  components: {
-
-  },
-  props: {}
+  }
 }
 </script>
 
@@ -172,7 +166,7 @@ body,
   transform: translateY(-50%) translateX(-50%);
 }
 h1 {
-  font-size: 4em;
+  font-size: 4.5em;
 }
 
 #particles-js {
@@ -211,6 +205,9 @@ h1 {
       // color: #3e64ff !important;
       // word-spacing: 15px !important;
       // white-space: nowrap;
+      word-break: break-all !important;
+
+      overflow-wrap: break-word !important;
     }
   }
 

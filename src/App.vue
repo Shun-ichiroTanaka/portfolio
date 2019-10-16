@@ -1,4 +1,4 @@
-<template>
+<template onload="reset();">
 <div id="app">
   <Nav></Nav>
   <go-top></go-top>
@@ -18,6 +18,11 @@ export default {
     Nav,
     GoTop
   },
+    mounted: function () {
+    $(document).ready(function () {
+
+    });
+  }
 
 }
 </script>

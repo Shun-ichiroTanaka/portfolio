@@ -1,5 +1,5 @@
 <template>
-<div id="nav">
+<div id="nav" onload="reset();">
   <div class='hamburger'>
     <div class='line'>MENU</div>
   </div>
@@ -93,7 +93,12 @@ export default {
         click: function() {
           closeMenu();
         }
-      })
+      });
+
+      window.onpageshow = function(event) {
+        if (event.persisted) {
+          window.location.reload();
+          }};
     });
   }
 }
