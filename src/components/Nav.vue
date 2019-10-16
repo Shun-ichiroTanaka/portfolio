@@ -53,6 +53,7 @@ export default {
 
       function openMenu() {
         menu.css("left", "0px");
+        menu.css("opacity", "1");
         hamburger.css("left", "-300px");
         line.css("background", "#FFF");
         menuOpen = true;
@@ -61,6 +62,7 @@ export default {
 
       function closeMenu() {
         menu.css("left", "-500px");
+        menu.css("opacity", "0");
         hamburger.css("left", "3vw");
         line.css("background", "#333");
         menuOpen = false;
@@ -113,7 +115,7 @@ export default {
   bottom: 5vh;
   left: 3vw;
   z-index: 5;
-  transition: left .3s;
+  transition: left 1.5s ease;
   cursor: pointer;
 }
 .menu-close {
@@ -140,18 +142,24 @@ export default {
   font-size: 1.3em;
   line-height: 1.3em;
   background: rgba(49, 49, 49, .7);
-  transition: left .2s;
+  transition: left 1.2s, opacity 2s ease !important;
 
   a {
     color: #fff;
     text-decoration: none;
   }
   &-child1 {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   &-close {
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 30px;
+    &:hover {
+              transform: rotate3d(0, 0, 1, 20deg);
+      transition: .2s ease !important;
+
+      -webkit-transform: rotate3d(0, 0, 1, 20deg);
+    }
   }
 }
 
@@ -175,8 +183,9 @@ export default {
 
 .menu-item:hover {
   color: rgb(43, 43, 43) !important;
+  font-size: 1.1em;
   background: #fff;
-  transition: .5s;
+  transition: .6s ease;
   cursor: pointer;
 }
 
@@ -200,14 +209,11 @@ export default {
   &__svg {
     width: 1.2rem;
     height: 1.2rem;
-    color: #fff;
     opacity: .6;
 
     &:hover {
-      width: 1.5rem;
-      height: 1.5rem;
-      color: #3feeab;
-      transition: .3s !important;
+      color: aquamarine;
+      transition: .1s;
     }
   }
 }
@@ -224,6 +230,12 @@ export default {
             transform: rotate3d(0, 0, 1, -90deg);
 
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    &:hover {
+              transform: rotate3d(0, 0, 1, -80deg);
+      transition: .2s ease;
+
+      -webkit-transform: rotate3d(0, 0, 1, -80deg);
+    }
   }
 
   .menu {
@@ -236,7 +248,7 @@ export default {
     font-size: 1.3em;
     line-height: 1.3em;
     background: rgba(49, 49, 49, .7);
-    transition: left .2s;
+    transition: left ease .2s;
 
     a {
       color: #fff;

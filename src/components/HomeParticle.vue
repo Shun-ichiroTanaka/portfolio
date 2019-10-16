@@ -6,6 +6,8 @@
       <div id="author-name">©︎All Rights are reserved by Shun-ichiro Tanaka</div>
       <div id="main" class="has-text-centered">
         <h1>Welcome to My Portfolio</h1>
+        <vue-page-transition name="overlay-up-down">
+        </vue-page-transition>
         <h2>I
           <vue-typer :text='[
                   " am a Fronted Engineer",

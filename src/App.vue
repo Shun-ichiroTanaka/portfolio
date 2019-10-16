@@ -3,9 +3,10 @@
   <Nav></Nav>
   <go-top></go-top>
   <vue-page-transition name="overlay-up-down">
-    <router-view />
+    <transition mode=”out-in”>
+      <router-view/>
+    </transition>
   </vue-page-transition>
-
 </div>
 </template>
 
@@ -47,6 +48,33 @@ export default {
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .v-enter-active, .v-leave-active {
+  transition: opacity 1s;
+  }
+  .v-enter, .v-leave-to {
+    opacity: 0;
+  }
+  .v-enter {
+    transform: translate(0, -120px);
+    opacity: 0;
+  }
+  .v-enter-to {
+    opacity: 1;
+  }
+  .v-enter-active {
+    transition: all 1s 0s ease;
+  }
+  .v-leave {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  .v-leave-to {
+    transform: translate(0, 120px);
+    opacity: 0;
+  }
+  .v-leave-active {
+    transition: all 1s 0s ease;
   }
 </style>
 <style lang="scss">
