@@ -146,6 +146,13 @@ export default {
     color: #fff;
     text-decoration: none;
   }
+  &-child1 {
+    margin-top: 100px;
+  }
+  &-close {
+    display: inline-block;
+    margin-top: 100px;
+  }
 }
 
 // .menu-child1 {
@@ -234,6 +241,13 @@ export default {
     a {
       color: #fff;
       text-decoration: none;
+    }
+    &-child1 {
+      margin-top: 150px;
+    }
+    &-close {
+      display: inline-block;
+      margin-top: 150px;
     }
   }
 }
