@@ -9,11 +9,16 @@
   },
   "dependencies": {
     "@inotom/vue-go-top": "^1.1.0",
+    "add": "^2.0.6",
     "core-js": "^2.6.5",
     "epic-spinners": "^1.1.0",
+    "firebase": "^7.2.1",
+    "firebase-admin": "^8.6.1",
+    "firebase-functions": "^3.3.0",
     "fullpage.js": "^3.0.7",
     "jquery": "^3.4.1",
     "lightgallery.js": "^1.1.3",
+    "nodemailer": "^6.3.1",
     "particles.js": "2.0.0",
     "typed.js": "^2.0.11",
     "vue": "^2.6.10",
@@ -27,7 +32,8 @@
     "vue-router": "^3.0.3",
     "vue-spinner": "^1.0.3",
     "vue-typer": "^1.2.0",
-    "vuesax": "^3.10.5"
+    "vuesax": "^3.10.5",
+    "vuetify": "^2.1.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.0",

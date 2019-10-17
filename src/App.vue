@@ -16,11 +16,13 @@
 <script>
 import Nav from '@/components/Nav.vue'
 import GoTop from '@inotom/vue-go-top';
+import ContactForm from './components/ContactForm'
 
 export default {
   components: {
     Nav,
-    GoTop
+    GoTop,
+    ContactForm
   },
   mounted: function () {
     $(document).ready(function () {});
@@ -41,8 +43,8 @@ export default {
 
 :root {
   // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3
-  --overlay-bg: #ddd6f3 !important;
-  --transition-duration: .5s !important;
+  // --overlay-bg: #ddd6f3 !important;
+  --transition-duration: .8s !important;
 }
 
 #app {

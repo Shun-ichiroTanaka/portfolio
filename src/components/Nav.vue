@@ -11,11 +11,11 @@
       <router-link to="/about">
         <div class='menu-item'>About</div>
       </router-link>
-      <router-link to="/sample">
-        <div class='menu-item'>Sample</div>
-      </router-link>
       <router-link to="/works">
         <div class='menu-item'>Myworks</div>
+      </router-link>
+      <router-link to="/contact">
+        <div class='menu-item'>Contact</div>
       </router-link>
 
       <div class="main__social">
@@ -115,7 +115,7 @@ export default {
   bottom: 5vh;
   left: 3vw;
   z-index: 201;
-  transition: left 1.5s ease;
+  transition: left 1.2s ease;
   cursor: pointer;
 }
 .menu-close {
@@ -127,7 +127,6 @@ export default {
 }
 .line {
   // position: fixed;
-  padding: 10px;
   font-size: 1.5em;
   background: rgba(255, 255, 255, .01) !important;
   border-bottom: 2px solid #2c3e50;
@@ -142,8 +141,8 @@ export default {
   height: 100%;
   font-size: 1.3em;
   line-height: 1.3em;
-  background: rgba(44,62,80, .7);
-  transition: left 1.2s, opacity 2s ease !important;
+  background: rgba(44,62,80, 1);
+  transition: left .8s, opacity 1.5s ease !important;
 
   a {
     color: #fff;
@@ -183,7 +182,7 @@ export default {
 }
 
 .menu-item:hover {
-  color: rgb(43, 43, 43) !important;
+  color: #2c3e50;
   font-size: 1.1em;
   background: #fff;
   transition: .6s ease;
@@ -223,21 +222,19 @@ export default {
 
 @media screen and (min-width: 1080px) {
   .hamburger {
-    top: 50vh;
-    left: 3vw;
+    top: 45vh;
+    transition: left 1.2s ease;
+    cursor: pointer;
   }
   .line {
+    // position: fixed;
+    padding: 15px;
     font-size: 1.5em;
-    border-bottom: 2px solid #2c3e4f;
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, .01)!important;
             transform: rotate3d(0, 0, 1, -90deg);
 
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    &:hover {
-              transform: rotate3d(0, 0, 1, -80deg);
-      transition: .2s ease;
-
-      -webkit-transform: rotate3d(0, 0, 1, -80deg);
-    }
   }
 
   .menu {
