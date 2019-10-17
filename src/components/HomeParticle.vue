@@ -218,7 +218,9 @@ h1 {
     top: 20px;
     right: 20px;
   }
+}
 
+@media screen and (min-width: 768px) {
   #author-name {
     position: absolute;
     top: 50vh;
@@ -230,8 +232,5 @@ h1 {
 
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
   }
-}
-
-@media screen and (min-width: 768px) {
 }
 </style>

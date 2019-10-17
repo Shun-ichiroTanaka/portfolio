@@ -2,49 +2,22 @@
   <div id="app" >
 <main>
   <div id="player">
+      <div id="video-box">
+
+      </div>
       <video
           controls
           crossorigin
           playsinline
-          poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+          poster="https://portfolio-b4cc1.firebaseapp.com/works/work04.jpg"
           id="player"
       >
           <!-- Video files -->
           <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+              src="https://portfolio-b4cc1.firebaseapp.com/works/work04.mp4"
               type="video/mp4"
-              size="576"
+              size="480"
           />
-          <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-              type="video/mp4"
-              size="720"
-          />
-          <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-              type="video/mp4"
-              size="1080"
-          />
-
-          <!-- Caption files -->
-          <track
-              kind="captions"
-              label="English"
-              srclang="en"
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-              default
-          />
-          <track
-              kind="captions"
-              label="Français"
-              srclang="fr"
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt"
-          />
-
-          <!-- Fallback for browsers that don't support the <video> element -->
-          <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download
-              >Download</a
-          >
       </video>
   </div>
 
@@ -122,5 +95,7 @@
 </script>
 
 <style lang="scss">
-
+#video-box {
+  width: 480px !important;
+}
 </style>

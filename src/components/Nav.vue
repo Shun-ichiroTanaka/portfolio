@@ -64,7 +64,7 @@ export default {
         menu.css("left", "-500px");
         menu.css("opacity", "0");
         hamburger.css("left", "3vw");
-        line.css("background", "#333");
+        line.css("background", "#2C3E50");
         menuOpen = false;
         menuOff = true;
       }
@@ -114,7 +114,7 @@ export default {
   position: absolute;
   bottom: 5vh;
   left: 3vw;
-  z-index: 5;
+  z-index: 201;
   transition: left 1.5s ease;
   cursor: pointer;
 }
@@ -126,10 +126,11 @@ export default {
   cursor: pointer;
 }
 .line {
+  // position: fixed;
   padding: 10px;
   font-size: 1.5em;
   background: rgba(255, 255, 255, .01) !important;
-  border-bottom: 2px solid #2c3e4f;
+  border-bottom: 2px solid #2c3e50;
 }
 
 .menu {
@@ -141,7 +142,7 @@ export default {
   height: 100%;
   font-size: 1.3em;
   line-height: 1.3em;
-  background: rgba(49, 49, 49, .7);
+  background: rgba(44,62,80, .7);
   transition: left 1.2s, opacity 2s ease !important;
 
   a {
@@ -155,10 +156,10 @@ export default {
     display: inline-block;
     margin-top: 30px;
     &:hover {
-              transform: rotate3d(0, 0, 1, 20deg);
-      transition: .2s ease !important;
+              transform: rotate3d(0, 0, 1, 15deg);
+      transition: .8s ease !important;
 
-      -webkit-transform: rotate3d(0, 0, 1, 20deg);
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
     }
   }
 }
@@ -212,7 +213,8 @@ export default {
     opacity: .6;
 
     &:hover {
-      color: aquamarine;
+      width: 1.4rem;
+      height: 1.4rem;
       transition: .1s;
     }
   }
@@ -240,15 +242,8 @@ export default {
 
   .menu {
     // position: fixed;
-    top: 0;
     left: -320px;
-    z-index: 201;
     width: 320px;
-    height: 100%;
-    font-size: 1.3em;
-    line-height: 1.3em;
-    background: rgba(49, 49, 49, .7);
-    transition: left ease .2s;
 
     a {
       color: #fff;
