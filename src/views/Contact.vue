@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template lang="html">
 <div class="con-example-images">
   <vs-row vs-w="12" class="section1">
@@ -136,4 +137,25 @@ export default {
   margin-top: 100px;
   background: rgb(187, 158, 158);
 }
+=======
+<template>
+  <div id="app" >
+    <ContactForm></ContactForm>
+  </div>
+</template>
+
+<script>
+import ContactForm from '@/components/ContactForm.vue'
+export default {
+  name: 'home',
+  components: {
+    ContactForm
+  }
+}
+</script>
+
+
+<style lang="scss">
+
+>>>>>>> 9e02917da449fce6f36ae7740075fdfd6a2a48a2
 </style>
