@@ -7,6 +7,8 @@ Vue.config.productionTip = false
 
 // ==================================================== component読込
 Vue.component('Nav', require('./components/Nav.vue').default);
+// Vue.component('Nav', require('./components/SpNav.vue').default);
+
 
 
 
@@ -41,6 +43,13 @@ import VuePreview from 'vue-preview'
 Vue.use(VuePreview)
 
 import 'particles.js'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(fas)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 
 // ==================================================== その他ライブラリ読込
 

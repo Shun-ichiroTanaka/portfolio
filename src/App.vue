@@ -1,10 +1,7 @@
 <template>
 <div id="app">
   <Nav></Nav>
-  <go-top
-  bg-color="#2C3E50"
-  :radius="0"
-  alt="TOP"></go-top>
+<go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
   <vue-page-transition name="overlay-up-down">
     <transition>
       <router-view />
@@ -14,13 +11,58 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
+import Nav from '@/components/Nav.vue';
 import GoTop from '@inotom/vue-go-top';
 
 export default {
   components: {
     Nav,
     GoTop,
+  },
+  data() {
+    return {
+      count: 4,
+      icons: ["fa fa-github", "fa fa-comment", "fa fa-code", "fa fa-envelope"],
+      list: [{
+          'isLink': true,
+          url: "/"
+        },
+        {
+          'isLink': true,
+          url: "/about"
+        },
+        {
+          'isLink': true,
+          url: "/works"
+        }, {
+          'isLink': true,
+          url: "/contact"
+        }
+      ],
+      backgroundColor: '#17c4c5',
+      color: '#ffffff',
+      position: 'top-left',
+      isOpenNewTab: false
+    }
+  },
+  computed: {
+    getCount() {
+      return Number(this.count)
+    },
+    getIsOpenNewTab() {
+      return Boolean(this.isOpenNewTab)
+    }
+  },
+  methods: {
+    print(key) {
+      if (key === 3) {
+        console.log('please send me an email')
+      }
+      if (key === 0) {
+        window.open('https://github.com/AshleyLv/vue-quick-menu')
+
+      }
+    }
   },
   mounted: function () {
     $(document).ready(function () {});
@@ -35,14 +77,14 @@ export default {
 .overlay-right,
 .overlay-top,
 .overlay-bottom {
-  background: #2c3e50 !important;
+  background: #7FDBD0 !important;
   z-index: 1000;
 }
 
 :root {
   // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3
   // --overlay-bg: #ddd6f3 !important;
-  --transition-duration: .8s !important;
+  --transition-duration: .5s !important;
 }
 
 #app {
@@ -66,6 +108,7 @@ export default {
 #gotop {
   background: #000 !important;
 }
+
 // =============================== vue-transition
 .v-enter-active,
 .v-leave-active {
@@ -107,11 +150,11 @@ export default {
 // =============================== vue-transition
 
 @media screen and (min-width: 1080px) {
-.section1 {
-  & img {
-    max-width: 450px;
+  .section1 {
+    & img {
+      max-width: 450px;
+    }
   }
-}
 
 }
 

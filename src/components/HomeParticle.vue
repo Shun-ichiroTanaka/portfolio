@@ -154,6 +154,7 @@ html,
 body,
 #app {
   position: relative;
+  z-index: -1;
   box-sizing: border-box !important;
   height: 100%;
   padding: 0;
