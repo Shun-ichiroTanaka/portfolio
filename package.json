@@ -13,7 +13,6 @@
     "core-js": "^2.6.5",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "firebase": "^7.2.1",
     "firebase-admin": "^8.6.1",
     "firebase-functions": "^3.3.0",
     "jquery": "^3.4.1",
