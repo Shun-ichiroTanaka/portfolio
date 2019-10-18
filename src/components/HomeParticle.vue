@@ -11,8 +11,8 @@
         <h2>I
           <vue-typer :text='[
                   " am a Fronted Engineer",
-                  " like sports, especially　 Baseball and Soccer",
-                  " have　been　studying　 　Laravel, Javascript",
+                  " use PHP, Javascript",
+                  " like sports very much",
                 ]' :repeat='Infinity' :shuffle='false' initial-action='typing' :pre-type-delay='100' :type-delay='100' :pre-erase-delay='1500' :erase-delay='20' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth' id="vue-typer"></vue-typer>
         </h2>
       </div>
@@ -34,8 +34,8 @@ export default {
           "number": {
             "value": 25,
             "density": {
-              "enable": false,
-              "value_area": 700
+              "enable": true,
+              "value_area": 800
             }
           },
           "color": {
@@ -71,7 +71,7 @@ export default {
             }
           },
           "size": {
-            "value": 2,
+            "value": .2,
             "random": false,
             "anim": {
               "enable": true,
@@ -84,8 +84,8 @@ export default {
             "enable": true,
             "distance": 1000,
             "color": "#2deda7",
-            "opacity": .5,
-            "width": .7
+            "opacity": 1,
+            "width": .3
           },
           "move": {
             "enable": true,
@@ -163,12 +163,12 @@ body,
 
 #main {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 #particles-js {
@@ -176,8 +176,10 @@ h1 {
   height: 100vh;
 }
 #vue-typer {
+  display: inline-block;
+  margin-top: 20px;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
-  font-size: .8em;
+  font-size: .7em;
 }
 #time {
   display: inline-block;
@@ -189,7 +191,7 @@ h1 {
 }
 @media screen and (min-width: 1080px) {
   #main {
-    top: 50%;
+    top: 50vh;
   }
   h1 {
     font-size: 5em;
