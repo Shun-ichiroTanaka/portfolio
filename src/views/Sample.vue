@@ -9,6 +9,7 @@
           controls
           crossorigin
           playsinline
+          width="480"
           poster="https://portfolio-b4cc1.firebaseapp.com/works/work04.jpg"
           id="player"
       >
@@ -16,7 +17,7 @@
           <source
               src="https://portfolio-b4cc1.firebaseapp.com/works/work04.mp4"
               type="video/mp4"
-              size="480"
+              size="1080"
           />
       </video>
   </div>
@@ -91,11 +92,8 @@
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss">
-#video-box {
-  width: 480px !important;
-}
+
 </style>

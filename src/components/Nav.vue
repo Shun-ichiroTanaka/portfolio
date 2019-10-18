@@ -3,7 +3,7 @@
   <div class='hamburger'>
     <div class='line'>MENU</div>
   </div>
-  <div class='menu'>
+  <div class='menu' onload="reset();">
     <div class="nav-link">
       <router-link to="/">
         <div class='menu-item menu-child1'>Home</div>
