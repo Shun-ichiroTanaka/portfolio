@@ -16,13 +16,11 @@
 <script>
 import Nav from '@/components/Nav.vue'
 import GoTop from '@inotom/vue-go-top';
-import ContactForm from './components/ContactForm'
 
 export default {
   components: {
     Nav,
     GoTop,
-    ContactForm
   },
   mounted: function () {
     $(document).ready(function () {});

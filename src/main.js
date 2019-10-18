@@ -42,8 +42,6 @@ Vue.use(VuePreview)
 
 import 'particles.js'
 
-import Vuetify from 'vuetify' // Import Vuetify to your project
-Vue.use(Vuetify) // Add Vuetify as a plugin
 // ==================================================== その他ライブラリ読込
 
 
