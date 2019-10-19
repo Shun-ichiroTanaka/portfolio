@@ -3,7 +3,7 @@
   <div>
     <vs-row vs-w="12" class="section1">
       <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
-        <h1>ABout Me</h1>
+        <h1>About Me</h1>
       </vs-col>
       <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
         <img src="/about/about-top.svg" alt="">

@@ -1,7 +1,8 @@
 <template>
 <div id="app">
   <Nav></Nav>
-<go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
+  <vue-scroll-progress-bar @complete="handleComplete" height="0.45rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
+  <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
   <vue-page-transition name="overlay-up-down">
     <transition>
       <router-view />

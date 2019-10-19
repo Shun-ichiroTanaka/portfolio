@@ -11,11 +11,11 @@
       <router-link to="/about">
         <div class='menu-item'>About</div>
       </router-link>
-      <router-link to="/sample">
-        <div class='menu-item'>Sample</div>
-      </router-link>
       <router-link to="/works">
         <div class='menu-item'>Myworks</div>
+      </router-link>
+      <router-link to="/contact">
+        <div class='menu-item'>Contact</div>
       </router-link>
 
       <div class="main__social">

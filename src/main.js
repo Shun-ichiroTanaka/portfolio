@@ -50,7 +50,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-
+import VueScrollProgressBar from '@guillaumebriday/vue-scroll-progress-bar'
+Vue.use(VueScrollProgressBar)
 // ==================================================== その他ライブラリ読込
 
 
