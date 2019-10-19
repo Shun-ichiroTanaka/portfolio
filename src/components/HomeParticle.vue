@@ -179,6 +179,7 @@ h1 {
 #vue-typer {
   display: inline-block;
   margin-top: 20px;
+  color: #2c3e50 !important;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
   font-size: .7em;
 }

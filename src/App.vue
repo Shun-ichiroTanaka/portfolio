@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <Nav></Nav>
-  <vue-scroll-progress-bar @complete="handleComplete" height="0.45rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
+  <vue-scroll-progress-bar @complete="handleComplete" height="0.3rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
   <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
   <vue-page-transition name="overlay-up-down">
     <transition>
@@ -80,6 +80,9 @@ export default {
 .overlay-bottom {
   background: #7FDBD0 !important;
   z-index: 1000;
+}
+.custom.char.typed {
+  color: #2c3e50 !important;
 }
 
 :root {
