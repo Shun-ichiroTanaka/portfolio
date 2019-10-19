@@ -9,6 +9,7 @@
         <img src="/about/about-top.svg" alt="">
       </vs-col>
     </vs-row>
+
   </div>
 
 </div>
@@ -21,7 +22,6 @@ window.$ = window.jQuery = require('jquery')
 export default {
   mounted: function () {
     $(document).ready(function () {
-      lightGallery(document.getElementById('captions'));
     });
 
   }
