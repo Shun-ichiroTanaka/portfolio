@@ -1,5 +1,5 @@
 <template>
-<div id="nav" onload="reset();">
+<div id="nav">
   <div class='hamburger'>
     <div class='line'>MENU</div>
   </div>

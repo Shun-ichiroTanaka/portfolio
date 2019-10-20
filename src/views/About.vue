@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <vs-row vs-w="12" class="section1">
+  <vs-row vs-w="12" class="section1" id="about-title">
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
       <h1>About
         <vue-typer :text='[
@@ -26,7 +26,7 @@
         <label class="tab_item" for="design">I want to do</label>
 
         <div class="tab_content" id="Profile">
-          <vs-row vs-w="12" class="mt50">
+          <vs-row vs-w="12">
             <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="5" vs-sm="5" vs-xs="12">
               <img src="/about/profile.jpg" class="profile-img">
             </vs-col>
@@ -39,27 +39,13 @@
                 <h3>Favorite</h3>
                 <p>スポーツ、特に野球とサッカー好きです。</p>
                 <p>大学まで硬式野球をしていました。</p>
+                <p>Web制作会社でコーダーとしてインターンをしていました。</p>
               </div>
             </vs-col>
           </vs-row>
         </div>
         <div class="tab_content" id="programming_content">
-          <vs-row vs-w="12" class="mt50">
-            <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="5" vs-sm="5" vs-xs="12">
-              <img src="/about/profile.jpg" class="profile-img">
-            </vs-col>
-            <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="7" vs-sm="7" vs-xs="12">
-              <div>
-                <h2>TANA</h2>
-                <p>Birth : 1996/8/9</p>
-                <p>香川生まれ東京育ち</p><br>
-
-                <h3>Favorite</h3>
-                <p>スポーツ、特に野球とサッカー好きです。</p>
-                <p>大学まで硬式野球をしていました。</p>
-              </div>
-            </vs-col>
-          </vs-row>
+          プログラミングの内容がここに入ります
         </div>
         <div class="tab_content" id="design_content">
           デザインの内容がここに入ります
@@ -86,14 +72,19 @@ export default {
 </script>
 
 <style lang="scss">
+h1 {
+  font-size: 3em;
+}
+
 #app {
+  position: relative;
   z-index: 0;
   max-width: 95vw;
   margin: 0 auto;
 }
-
-.mt50 {
+#about-title {
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .profile-img {
@@ -163,6 +154,9 @@ input[name="tab_item"] {
 @media screen and (min-width: 1080px) {
   .tabs {
     width: 70vw;
+  }
+  h1 {
+    font-size: 5em;
   }
 }
 

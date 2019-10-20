@@ -40,13 +40,6 @@ export default {
           },
           "color": {
             "value": [
-              // "#fa5477",
-              // "#47e4bb",
-              // "#fa5477",
-              // "#1089ff",
-              // "#834fe3",
-              // "#f4ec05",
-              // "#f272d9",
               "#2deda7",
             ]
           },
@@ -164,12 +157,12 @@ body,
 
 #main {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
 h1 {
-  font-size: 4em;
+  font-size: 4.5em;
 }
 
 #particles-js {
@@ -182,6 +175,7 @@ h1 {
   color: #2c3e50 !important;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
   font-size: .7em;
+  white-space: nowrap !important;
 }
 #time {
   display: inline-block;
@@ -208,9 +202,6 @@ h1 {
     font-size: .5em;
 
     .custom.char.typed {
-      // color: #3e64ff !important;
-      // word-spacing: 15px !important;
-      // white-space: nowrap;
       word-break: break-all !important;
 
       overflow-wrap: break-word !important;

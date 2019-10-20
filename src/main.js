@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 
 // ==================================================== component読込
 Vue.component('Nav', require('./components/Nav.vue').default);
-// Vue.component('Nav', require('./components/SpNav.vue').default);
+// Vue.component('SkillChart', require('./components/SkillChart.vue').default);
 
 
 
@@ -19,10 +19,6 @@ Vue.component('Nav', require('./components/Nav.vue').default);
 // ==================================================== その他ライブラリ読込
 import VuePageTransition from 'vue-page-transition'
 Vue.use(VuePageTransition)
-
-import VuePlyr from 'vue-plyr';
-import 'vue-plyr/dist/vue-plyr.css';
-Vue.use(VuePlyr)
 
 import VueTyperPlugin from 'vue-typer'
 Vue.use(VueTyperPlugin)
@@ -39,9 +35,6 @@ import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 Vue.use(Vuesax)
 
-import VuePreview from 'vue-preview'
-Vue.use(VuePreview)
-
 import 'particles.js'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -53,6 +46,8 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 import VueScrollProgressBar from '@guillaumebriday/vue-scroll-progress-bar'
 Vue.use(VueScrollProgressBar)
 
+// import VueFullPage from 'vue-fullpage'
+// Vue.use(VueFullPage);
 // ==================================================== その他ライブラリ読込
 
 

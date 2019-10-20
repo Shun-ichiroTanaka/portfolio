@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <Nav></Nav>
-  <vue-scroll-progress-bar @complete="handleComplete" height="0.3rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
+  <vue-scroll-progress-bar @complete="handleCoplete" height="0.3rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
   <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
   <vue-page-transition name="overlay-up-down">
     <transition>
@@ -86,8 +86,6 @@ export default {
 }
 
 :root {
-  // #ACB6E5,#74ebd5,#A7BFE8,#ddd6f3
-  // --overlay-bg: #ddd6f3 !important;
   --transition-duration: .5s !important;
 }
 
@@ -98,10 +96,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+#mt50{
+  margin-top: 50px;
+}
+
 .section1 {
   display: block;
   height: 300px;
-  margin-top: 70px;
+  // margin-top: 70px;
   ;
 
   & img {
