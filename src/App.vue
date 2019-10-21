@@ -74,6 +74,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+p {
+  font-family: "Open Sans", sans-serif !important;
+}
 .overlay-left,
 .overlay-right,
 .overlay-top,
@@ -100,6 +104,7 @@ export default {
 #mt50{
   margin-top: 50px;
 }
+
 
 .section1 {
   display: block;

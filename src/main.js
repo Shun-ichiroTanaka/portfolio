@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 
 // ==================================================== component読込
 Vue.component('Nav', require('./components/Nav.vue').default);
-// Vue.component('SkillChart', require('./components/SkillChart.vue').default);
+Vue.component('SkillChart', require('./components/Chart.vue').default);
 
 
 
@@ -46,8 +46,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 import VueScrollProgressBar from '@guillaumebriday/vue-scroll-progress-bar'
 Vue.use(VueScrollProgressBar)
 
-// import VueFullPage from 'vue-fullpage'
-// Vue.use(VueFullPage);
 // ==================================================== その他ライブラリ読込
 
 
