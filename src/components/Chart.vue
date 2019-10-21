@@ -22,10 +22,6 @@
       <dd class="percentage percentage-45"><span class="text">Laravel</span></dd>
       <dd class="percentage percentage-45"><span class="text">Vue.js</span></dd>
       <dd class="percentage percentage-20"><span class="text">React</span></dd>
-      <dd class="percentage percentage-20"><span class="text">Ruby on Rails</span></dd>
-      <dd class="percentage percentage-10"><span class="text">Backbone.js</span></dd>
-      <dd class="percentage percentage-10"><span class="text">FuelPHP</span></dd>
-      <dd class="percentage percentage-10"><span class="text">Java</span></dd>
     </dl>
   </div>
     <div class="box">
@@ -37,7 +33,7 @@
       <dd class="percentage percentage-60"><span class="text">Illustrator</span></dd>
       <dd class="percentage percentage-70"><span class="text">XD</span></dd>
       <dd class="percentage percentage-70"><span class="text">Aftereffect</span></dd>
-      <dd class="percentage percentage-80"><span class="text">Premiere pro</span></dd>
+      <dd class="percentage percentage-80"><span class="text">Premiere</span></dd>
       <dd class="percentage percentage-50"><span class="text">Audition</span></dd>
     </dl>
   </div>
@@ -48,8 +44,8 @@
       </dt>
       <dd class="percentage percentage-50"><span class="text">Firebase</span></dd>
       <dd class="percentage percentage-50"><span class="text">Heroku</span></dd>
-      <dd class="percentage percentage-30"><span class="text">GAE</span></dd>
-      <dd class="percentage percentage-30"><span class="text">AWS</span></dd>
+      <dd class="percentage percentage-20"><span class="text">GAE</span></dd>
+      <dd class="percentage percentage-20"><span class="text">AWS</span></dd>
     </dl>
     </dl>
   </div>

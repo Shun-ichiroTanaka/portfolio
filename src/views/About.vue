@@ -16,7 +16,6 @@
     </vs-col>
   </vs-row>
   <vs-row vs-w="12" class="section1">
-    <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="12" vs-sm="12" vs-xs="12">
       <div class="tabs">
         <input id="all" type="radio" name="tab_item" checked>
         <label class="tab_item" for="all">Profile</label>
@@ -40,8 +39,8 @@
             </vs-col>
           </vs-row><br><br>
           <h3>PAST</h3><br>
-          <p>○CHANNELという会社でYoutube事業の映像を作ったりWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
-            エンジニアとしてレベルアップをしたいと思いバックエンドの勉強をしています。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
+          <p>女性メディアのYoutubeの編集やWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
+            エンジニアとしてレベルアップをするため退職しフロントはVueやReact、バックエンドはPHP(Laravel)の勉強をしています。将来はフィットネス関係の経営者になりスケールさせることが夢です。</p><br>
           <div class="main__social">
             <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
               <svg class="main__svg" viewBox="0 0 512 512">
@@ -65,7 +64,6 @@
         </div>
 
       </div>
-    </vs-col>
   </vs-row>
 
 </div>
@@ -104,8 +102,7 @@ h1 {
 }
 
 #about-title {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 50px 0;
 }
 
 .profile-img {
@@ -115,7 +112,6 @@ h1 {
 /*タブ切り替え全体のスタイル*/
 .tabs {
   width: 100%;
-  min-height: 600px;
   padding-bottom: 40px;
   margin: 0 auto 100px auto;
   margin-top: 50px;
