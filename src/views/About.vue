@@ -40,7 +40,7 @@
           </vs-row><br><br>
           <h3>PAST</h3><br>
           <p>女性メディアのYoutubeの編集やWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
-            エンジニアとしてレベルアップをするため退職しフロントはVueやReact、バックエンドはPHP(Laravel)の勉強をしています。将来はフィットネス関係の経営者になりスケールさせることが夢です。</p><br>
+            エンジニアとしてレベルアップをするため退職しフロントはVueやReact、バックエンドはPHP(Laravel)の勉強をしています。将来はフィットネス関係の事業をスケールさせることが目標です。</p><br>
           <div class="main__social">
             <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
               <svg class="main__svg" viewBox="0 0 512 512">
@@ -131,7 +131,7 @@ h1 {
   line-height: 50px;
   text-align: center;
   text-align: center;
-  border-bottom: 3px solid #7fdbd0;
+  border-bottom: 3px solid rgb(75, 196, 170);
   transition: all .2s ease;
   cursor: pointer;
 }
@@ -165,7 +165,7 @@ input[name="tab_item"] {
 /*選択されているタブのスタイルを変える*/
 .tabs input:checked + .tab_item {
   color: #fff;
-  background: #7fdbd0;
+  background: rgb(75, 196, 170);
 }
 
 @media screen and (min-width: 1080px) {
