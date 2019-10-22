@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <vs-row vs-w="12" class="section1" id="about-title">
+  <vs-row vs-w="12" class="section1">
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
       <h1>About
         <vue-typer :text='[
@@ -15,7 +15,8 @@
       <img src="/about/about-top.svg" alt="">
     </vs-col>
   </vs-row>
-  <vs-row vs-w="12" class="section1">
+  <vs-row vs-w="12">
+    <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="12" vs-sm="12" vs-xs="12">
       <div class="tabs">
         <input id="all" type="radio" name="tab_item" checked>
         <label class="tab_item" for="all">Profile</label>
@@ -39,8 +40,8 @@
             </vs-col>
           </vs-row><br><br>
           <h3>PAST</h3><br>
-          <p>女性メディアのYoutubeの編集やWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
-            エンジニアとしてレベルアップをするため退職しフロントはVueやReact、バックエンドはPHP(Laravel)の勉強をしています。将来はフィットネス関係の事業をスケールさせることが目標です。</p><br>
+          <p>○CHANNELという会社でYoutube事業の映像を作ったりWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
+            エンジニアとしてレベルアップをしたいと思いバックエンドの勉強をしています。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
           <div class="main__social">
             <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
               <svg class="main__svg" viewBox="0 0 512 512">
@@ -64,6 +65,7 @@
         </div>
 
       </div>
+    </vs-col>
   </vs-row>
 
 </div>
@@ -94,27 +96,18 @@ h1 {
   font-size: 3em;
 }
 
-#app {
-  position: relative;
-  z-index: 0;
-  max-width: 95vw;
-  margin: 0 auto;
-}
-
-#about-title {
-  margin: 50px 0;
-}
-
 .profile-img {
+  max-width: 90vw;
   border-radius: 50%;
 }
 
 /*タブ切り替え全体のスタイル*/
 .tabs {
   width: 100%;
+  min-height: 600px;
   padding-bottom: 40px;
   margin: 0 auto 100px auto;
-  margin-top: 50px;
+  // margin-top: 50px;
   background-color: #fff;
   // box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
@@ -131,7 +124,7 @@ h1 {
   line-height: 50px;
   text-align: center;
   text-align: center;
-  border-bottom: 3px solid rgb(75, 196, 170);
+  border-bottom: 3px solid #7fdbd0;
   transition: all .2s ease;
   cursor: pointer;
 }
@@ -165,7 +158,7 @@ input[name="tab_item"] {
 /*選択されているタブのスタイルを変える*/
 .tabs input:checked + .tab_item {
   color: #fff;
-  background: rgb(75, 196, 170);
+  background: #7fdbd0;
 }
 
 @media screen and (min-width: 1080px) {

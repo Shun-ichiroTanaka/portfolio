@@ -143,6 +143,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script&display=swap");
+
 html,
 body,
 #app {
@@ -161,6 +162,7 @@ body,
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
+
 h1 {
   font-size: 4.5em;
 }
@@ -169,6 +171,7 @@ h1 {
   width: 100vw;
   height: 100vh;
 }
+
 #vue-typer {
   display: inline-block;
   margin-top: 20px;
@@ -177,18 +180,22 @@ h1 {
   font-size: .7em;
   white-space: nowrap !important;
 }
+
 #time {
   display: inline-block;
   margin: 0 auto;
   margin-top: 30px;
 }
+
 #author-name {
   display: none;
 }
+
 @media screen and (min-width: 1080px) {
   #main {
     top: 50vh;
   }
+
   h1 {
     font-size: 5em;
     white-space: nowrap;
@@ -197,6 +204,7 @@ h1 {
   h2 {
     font-size: 3em;
   }
+
   #vue-typer {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
     font-size: .5em;

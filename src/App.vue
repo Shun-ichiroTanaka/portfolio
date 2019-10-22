@@ -14,6 +14,8 @@
 <script>
 import Nav from '@/components/Nav.vue';
 import GoTop from '@inotom/vue-go-top';
+import jQuery from 'jquery'
+window.$ = window.jQuery = require('jquery')
 
 export default {
   components: {
@@ -75,9 +77,40 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html,
+body,
+div,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ol,
+ul,
+li,
+form,
+legend,
+label,
+table,
+header,
+footer,
+nav,
+section,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
 p {
   font-family: "Open Sans", sans-serif !important;
 }
+
 .overlay-left,
 .overlay-right,
 .overlay-top,
@@ -85,6 +118,7 @@ p {
   background: #7FDBD0 !important;
   z-index: 1000;
 }
+
 .custom.char.typed {
   color: #2c3e50 !important;
 }
@@ -100,11 +134,16 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#mt {
+  &100 {
+    margin-top: 100px;
+  }
 
-#mt50{
-  margin-top: 50px;
+  &50 {
+    margin-top: 50px;
+  }
+
 }
-
 
 .section1 {
   display: block;
