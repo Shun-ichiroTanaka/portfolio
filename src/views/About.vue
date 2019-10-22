@@ -97,8 +97,15 @@ h1 {
 }
 
 .profile-img {
+  width: 400px;
   max-width: 90vw;
   border-radius: 50%;
+}
+#app {
+  position: relative;
+  z-index: 0;
+  max-width: 95vw;
+  margin: 0 auto;
 }
 
 /*タブ切り替え全体のスタイル*/
@@ -107,7 +114,7 @@ h1 {
   min-height: 600px;
   padding-bottom: 40px;
   margin: 0 auto 100px auto;
-  // margin-top: 50px;
+  margin-top: 50px;
   background-color: #fff;
   // box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }

@@ -199,6 +199,7 @@ header {
   float: left;
   display: inline-block;
   overflow: visible;
+  padding: 10px 0;
   padding: 0;
   color: inherit;
   font: inherit;
@@ -294,7 +295,7 @@ header {
 .hamburger-label {
   display: inline-block;
   margin-left: .3125em;
-  color: #fff;
+  // color: #fff;
   font-weight: 700;
   line-height: 1;
   letter-spacing: .08em;

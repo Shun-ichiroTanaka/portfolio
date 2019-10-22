@@ -3,7 +3,7 @@
   <div class="particles">
     <div id="particles-js">
       <span id="time">{{ $moment().format('YYYY/MM/DD HH:mm')}}</span>
-      <div id="author-name">©︎All Rights are reserved by Shun-ichiro Tanaka</div>
+      <div id="author-name">©︎All Rights are reserved by Shun-ichiro Tanaka -2019</div>
       <div id="main" class="has-text-centered">
         <h1>Welcome to My Portfolio</h1>
         <vue-page-transition name="overlay-up-down">
@@ -158,13 +158,13 @@ body,
 
 #main {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 #particles-js {
@@ -177,14 +177,12 @@ h1 {
   margin-top: 20px;
   color: #2c3e50 !important;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
-  font-size: .7em;
+  font-size: .5em;
   white-space: nowrap !important;
 }
 
 #time {
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 30px;
+  display: none;
 }
 
 #author-name {
@@ -218,22 +216,26 @@ h1 {
 
   #time {
     position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #author-name {
-    position: absolute;
     top: 50vh;
-    right: -100px;
+    right: -50px;
     display: block;
     word-spacing: 10px;
     border-bottom: 2px solid #2c3e4f;
             transform: rotate3d(0, 0, 1, -90deg);
 
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #author-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: block;
+    word-spacing: 10px;
+    border-bottom: 2px solid #2c3e4f;
+    transform: translateY(-50%) translateX(-50%);
   }
 }
 </style>
