@@ -1,19 +1,5 @@
 <template>
 <div id="nav">
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-    <defs>
-      <symbol viewBox="0 0 60 60" id="icon-facebook">
-        <path d="M25.8 46.3h6.7V30H37l.6-5.6h-5.1v-2.8c0-1.5.1-2.3 2.2-2.3h2.8v-5.6H33c-5.4 0-7.3 2.7-7.3 7.3v3.4h-3.4V30h3.4v16.3zM30 60C13.4 60 0 46.6 0 30S13.4 0 30 0s30 13.4 30 30-13.4 30-30 30z" />
-      </symbol>
-      <symbol viewBox="0 0 60 60" id="icon-linkedin">
-        <path d="M46.8 44.1V32.4c0-6.3-3.3-9.2-7.8-9.2-3.6 0-5.2 2-6.1 3.4v-2.9h-6.8c.1 1.9 0 20.4 0 20.4h6.8V32.7c0-.6 0-1.2.2-1.7.5-1.2 1.6-2.5 3.5-2.5 2.5 0 3.4 1.9 3.4 4.6V44l6.8.1zM19 20.9c2.4 0 3.8-1.6 3.8-3.5 0-2-1.5-3.5-3.8-3.5s-3.8 1.5-3.8 3.5 1.4 3.5 3.8 3.5zM30 60C13.4 60 0 46.6 0 30S13.4 0 30 0s30 13.4 30 30-13.4 30-30 30zm-7.6-15.9V23.7h-6.8v20.4h6.8z" />
-      </symbol>
-      <symbol viewBox="0 0 60 60" id="icon-twitter">
-        <path d="M34.2 18.3c-2.6 1-4.3 3.4-4.1 6.1l.1 1-1-.1c-3.8-.5-7.1-2.1-10-4.9L17.7 19l-.4 1c-.8 2.3-.3 4.7 1.3 6.3.8.9.6 1-.8.5-.5-.2-.9-.3-1-.2-.1.1.4 2.1.8 2.8.5 1.1 1.7 2.1 2.9 2.7l1 .5h-1.2c-1.2 0-1.2 0-1.1.5.4 1.4 2.1 2.8 3.9 3.5l1.3.4-1.1.7c-1.7 1-3.6 1.5-5.6 1.6-.9 0-1.7.1-1.7.2 0 .2 2.6 1.4 4 1.9 4.5 1.4 9.8.8 13.7-1.6 2.8-1.7 5.7-5 7-8.2.7-1.7 1.4-4.9 1.4-6.4 0-1 .1-1.1 1.2-2.3.7-.7 1.3-1.4 1.5-1.6.2-.4.2-.4-.9 0-1.8.6-2 .6-1.2-.4.6-.7 1.4-1.9 1.4-2.3 0-.1-.3 0-.7.2-.4.2-1.2.5-1.8.7l-1.1.4-1-.7c-.6-.4-1.4-.8-1.8-.9-.9-.4-2.6-.4-3.5 0zM30 60C13.4 60 0 46.6 0 30S13.4 0 30 0s30 13.4 30 30-13.4 30-30 30z" />
-      </symbol>
-    </defs>
-  </svg>
-
   <div class="hero">
     <header id="masthead" role="banner">
       <div class="container">
@@ -23,44 +9,51 @@
           </span>
           <span class="hamburger-label">Menu</span>
         </button>
-        <nav id="site-nav" role="navigation">
+        <nav id="site-nav" v-on:click="site-nav" role="navigation">
           <div class="col">
             <h4>Home</h4>
             <ul>
-              <li><router-link to="/"><img src="/home/home.svg" alt="" width="200"></router-link></li>
+              <li>
+                <a href="/"><img src="/home/home.svg" alt="" width="200"></a>
+              </li>
             </ul>
           </div>
           <div class="col">
             <h4>About Me</h4>
             <ul>
-              <li><router-link to="/about"><img src="/home/about.svg" alt="" width="200"></router-link></li>
+              <li>
+                <a href="/about"><img src="/home/about.svg" alt="" width="200"></a>
+              </li>
             </ul>
           </div>
           <div class="col">
             <h4>Works</h4>
             <ul>
-              <li><router-link to="/works"><img src="/home/works.svg" alt="" width="200"></router-link></li>
+              <li>
+                <a href="/works"><img src="/home/works.svg" alt="" width="200"></a>
+              </li>
             </ul>
           </div>
           <div class="col">
             <h4>Contact</h4>
             <ul>
-              <li><router-link to="/contact"><img src="/home/contact.svg" alt="" width="200"></router-link></li>
+              <li>
+                <a href="/contact"><img src="/home/contact.svg" alt="" width="200"></a>
+              </li>
             </ul>
           </div>
-          <div class="col">
-            <ul class="social">
-              <li><a href=""><svg title="Facebook">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg></a></li>
-              <li><a href=""><svg title="Twitter">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg></a></li>
-              <li><a href=""><svg title="LinkedIn">
-                    <use xlink:href="#icon-linkedin"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
+          <ul class="social">
+            <li><a href="https://github.com/Shun-ichiroTanaka/" target="_blank" rel="noopener">
+                <svg class="main__svg" viewBox="0 0 496 512">
+                  <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                </svg></a></li>
+            <li><a href="https://twitter.com/tana_fe" target="_blank" rel="noopener">
+                <svg class="main__svg" viewBox="0 0 512 512">
+                  <title>Follow me on Twitter</title>
+                  <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg>
+              </a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -72,20 +65,20 @@
 export default {
   name: 'Nav',
   mounted: function () {
-    $(function () {
-      $('body').addClass('js');
 
-      var $hamburger = $('.hamburger'),
-        $nav = $('#site-nav'),
-        $masthead = $('#masthead');
+    $('body').addClass('js');
 
-      $hamburger.click(function () {
-        $(this).toggleClass('is-active');
-        $nav.toggleClass('is-active');
-        $masthead.toggleClass('is-active');
-        return false;
-      })
-    });
+    var $hamburger = $('.hamburger'),
+      $nav = $('#site-nav'),
+      $masthead = $('#masthead');
+
+    $hamburger.click(function () {
+      $(this).toggleClass('is-active');
+      $nav.toggleClass('is-active');
+      $masthead.toggleClass('is-active');
+      return false;
+    })
+
   }
 }
 </script>
@@ -113,8 +106,6 @@ header {
   max-width: 100vw !important;
 }
 
-
-
 .container {
   position: fixed;
   width: 100%;
@@ -129,12 +120,7 @@ header {
   display: table;
 }
 
-// .container {
-//   width: 90%;
-//   max-width: 1200px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
+
 
 // /*
 // Full screen background image
@@ -165,10 +151,13 @@ header {
 .hero * {
   position: relative;
   z-index: 1000;
+  margin: 0 auto;
 }
+
 #masthead {
   position: relative;
 }
+
 #masthead.is-active {
   background: #fff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
@@ -184,7 +173,6 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
   transition: opacity .3s ease;
   opacity: 0;
 }
@@ -337,6 +325,7 @@ header {
     margin: 0 10px;
     color: rgb(80, 202, 162);
     opacity: .6;
+
     &:hover {
       width: 1.4rem;
       height: 1.4rem;
@@ -367,6 +356,7 @@ header {
     position: relative;
     padding: 2.5em;
   }
+
   #site-nav {
     flex-wrap: nowrap;
   }
@@ -402,6 +392,7 @@ header {
 }
 
 #site-nav .social {
+  display: flex;
   overflow: hidden;
   margin: 0;
 }

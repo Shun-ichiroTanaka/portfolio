@@ -3,7 +3,11 @@
   <div class="particles">
     <div id="particles-js">
       <span id="time">{{ $moment().format('YYYY/MM/DD HH:mm')}}</span>
-      <div id="author-name">©︎All Rights are reserved by Shun-ichiro Tanaka -2019</div>
+      <div id="author-name">
+        <vue-typer :text='[
+                  "©︎All Rights are reserved by Shun-ichiro Tanaka -2019",
+                ]' initial-action='typing' :pre-type-delay='300' :type-delay='300' :pre-erase-delay='1500' :erase-delay='100' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth'></vue-typer>
+      </div>
       <div id="main" class="has-text-centered">
         <h1>Welcome to My Portfolio</h1>
         <vue-page-transition name="overlay-up-down">
