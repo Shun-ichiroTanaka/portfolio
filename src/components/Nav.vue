@@ -84,7 +84,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "https://fonts.googleapis.com/css?family=Roboto:400,500";
 
 html {
   box-sizing: border-box;
@@ -159,7 +158,7 @@ header {
 }
 
 #masthead.is-active {
-  background: #fff;
+  background-image: linear-gradient(to top, #edf0f3 0%, white 100%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
 }
 

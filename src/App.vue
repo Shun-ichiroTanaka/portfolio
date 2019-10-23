@@ -19,6 +19,7 @@ import GoTop from '@inotom/vue-go-top';
 import jQuery from 'jquery'
 window.$ = window.jQuery = require('jquery')
 
+
 export default {
   components: {
     Nav,
@@ -79,6 +80,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import "https://fonts.googleapis.com/css?family=Roboto:400,500";
 
 html,
 body,
