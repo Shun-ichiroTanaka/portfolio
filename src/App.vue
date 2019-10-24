@@ -1,9 +1,9 @@
 <template>
 <div id="app">
 
-      <Nav></Nav>
-      <vue-scroll-progress-bar @complete="handleCoplete" height="0.3rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
-      <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
+  <Nav></Nav>
+  <vue-scroll-progress-bar @complete="handleCoplete" height="0.3rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
+  <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
 
   <vue-page-transition name="overlay-up-down">
     <transition>
@@ -18,7 +18,6 @@ import Nav from '@/components/Nav.vue';
 import GoTop from '@inotom/vue-go-top';
 import jQuery from 'jquery'
 window.$ = window.jQuery = require('jquery')
-
 
 export default {
   components: {
@@ -81,6 +80,7 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import "https://fonts.googleapis.com/css?family=Roboto:400,500";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
 html,
 body,
@@ -109,10 +109,12 @@ section,
 figure {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 p {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Open Sans", 'Noto Sans JP', sans-serif !important;
+  color: #2c3e50 !important;
 }
 
 .overlay-left,
@@ -150,18 +152,13 @@ p {
 }
 
 .section1 {
-  display: block;
-  height: 300px;
-  // margin-top: 70px;
-  ;
-
   & img {
     max-width: 80vw;
   }
 }
 
 #gotop {
-  background: #000 !important;
+  background: #2c3e50 !important;
 }
 
 // =============================== vue-transition

@@ -84,11 +84,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -96,13 +91,16 @@ html {
 }
 
 body {
+  max-width: 100vw !important;
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif !important;
   font-size: 100%;
   line-height: 1.5;
 }
 
 header {
-  max-width: 100vw !important;
+  width: 100vw !important;
 }
 
 .container {
@@ -128,7 +126,7 @@ header {
   position: absolute;
   top: 0 !important;
   left: 0;
-  width: 100%;
+  width: 100vw;
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -137,9 +135,8 @@ header {
 // */
 .hero:after {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
-  width: 100vw;
   height: 100%;
   // background: rgba(161, 83, 83, .5);
 }
@@ -158,7 +155,7 @@ header {
 }
 
 #masthead.is-active {
-  background-image: linear-gradient(to top, #edf0f3 0%, white 100%);
+  background-image: linear-gradient(to top, white 0%, #f2f2f2 100%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
 }
 

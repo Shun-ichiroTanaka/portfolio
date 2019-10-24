@@ -9,7 +9,7 @@
         <div slot="header">ポートフォリオサイト</div>
         <a href="https://portfolio-b4cc1.firebaseapp.com/" target="_blank" rel="noopener">https://portfolio-b4cc1.firebaseapp.com/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　Firebase <br>
+        デプロイ　/　Firebase <br>
         Web開発環境　/　MAMP <br><br>
         VueでSPA構築。WebpackとBabelを導入しgulpでコンパイルという手もあったが、
         今回は小規模サイトなのでVueの特徴の一つでもある各ページにSassを書く形にした。
@@ -36,7 +36,7 @@
         <a href="https://e-commerce-94802.firebaseapp.com/" target="_blank" rel="noopener">https://e-commerce-94802.firebaseapp.com/</a><br><br>
         <br><br>
         バックエンド　/　フロントエンド　/　Vue.js <br>
-        本番環境　/　Firebase <br>
+        デプロイ　/　Firebase <br>
         Web開発環境　/　MAMP <br><br>
         <br><br>
         efficitur. Mauris quis faucibus nulla. Pellentesque egestas non ipsum vel maximus.
@@ -56,7 +56,7 @@
         </div>
         <a href="https://shun-ichirotanaka.github.io/vue_music/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_music/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　GithubPage <br>
+        デプロイ　/　GithubPage <br>
         Web開発環境　/　MAMP <br><br>
       </vs-collapse-item>
       <vs-collapse-item>
@@ -65,7 +65,7 @@
         </div>
         <a href="https://shun-ichirotanaka.github.io/vue_memorygame2/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_memorygame2/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　GithubPage <br>
+        デプロイ　/　GithubPage <br>
         Web開発環境　/　MAMP <br><br>
       </vs-collapse-item>
       <vs-collapse-item>
@@ -74,7 +74,7 @@
         </div>
         <a href="https://shun-ichirotanaka.github.io/vue_memorycardgame/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_memorycardgame/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　GithubPage <br>
+        デプロイ　/　GithubPage <br>
         Web開発環境　/　MAMP <br><br>
       </vs-collapse-item>
       <vs-collapse-item>
@@ -83,7 +83,7 @@
         </div>
         <a href="https://shun-ichirotanaka.github.io/vue_calculator/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_calculator/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　GithubPage <br>
+        デプロイ　/　GithubPage <br>
         Web開発環境　/　MAMP <br><br>
       </vs-collapse-item>
       <vs-collapse-item>
@@ -92,7 +92,7 @@
         </div>
         <a href="https://shun-ichirotanaka.github.io/vue_clock/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_clock/</a><br><br>
         バックエンド・フロントエンド　/　Vue.js <br>
-        本番環境　/　GithubPage <br>
+        デプロイ　/　GithubPage <br>
         Web開発環境　/　MAMP <br><br>
       </vs-collapse-item>
     </vs-collapse>
@@ -125,11 +125,8 @@ export default {
 
 <style lang="scss">
 .con-example-images {
-  max-width: 80vw;
   padding: 50px 0;
   margin: 0 auto;
-  // overflow: auto;
-  // max-height: 500px;
 }
 
 h1 {
@@ -137,16 +134,12 @@ h1 {
 }
 
 .work-box {
-  margin: 100px 0;
+  width: 80vw;
+  margin: 100px auto;
 }
 
 .work-details {
-  color: #333;
-  font-family: "Roboto", sans-serif !important;
-  background-image: linear-gradient(-225deg, #fff 0%, #fff 100%);
-}
-
-#gallery {
-  max-width: 1200px !important;
+  font-family: "Noto Sans JP", sans-serif !important;
+  background: #f2f2f2;
 }
 </style>

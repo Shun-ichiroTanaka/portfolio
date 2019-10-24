@@ -40,8 +40,8 @@
             </vs-col>
           </vs-row><br><br>
           <h3>PAST</h3><br>
-          <p>○CHANNELという会社でYoutube事業の映像を作ったりWeb制作会社にてコーダーとして働いたりしてきました。プログラミングが好きでコーダーとして働いていましたが、
-            エンジニアとしてレベルアップをしたいと思いバックエンドの勉強をしています。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
+          <p>女性メディア会社でYoutube事業の映像編集をしたりWeb制作会社にてコーダーとして働いていました。プログラミングが好きで
+            エンジニアとしてレベルアップを図るためバックエンドの勉強を始めました(PHP,Javascriptなど)。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
           <div class="main__social">
             <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
               <svg class="main__svg" viewBox="0 0 512 512">
@@ -95,6 +95,10 @@ export default {
 h1 {
   font-size: 3em;
 }
+.section1 {
+  display: block;
+  padding-top: 100px;
+}
 
 .profile-img {
   width: 400px;
@@ -104,7 +108,6 @@ h1 {
 #app {
   position: relative;
   z-index: 0;
-  max-width: 95vw;
   margin: 0 auto;
 }
 
