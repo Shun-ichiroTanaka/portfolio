@@ -42,6 +42,7 @@
           <h3>PAST</h3><br>
           <p>女性メディア会社でYoutube事業の映像編集をしたりWeb制作会社にてコーダーとして働いていました。プログラミングが好きで
             エンジニアとしてレベルアップを図るためバックエンドの勉強を始めました(PHP,Javascriptなど)。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
+          <p>お手数ですが、ご連絡はTwitterのDMまでお願いします。</p><br>
           <div class="main__social">
             <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
               <svg class="main__svg" viewBox="0 0 512 512">
@@ -60,10 +61,6 @@
         <div class="tab_content" id="programming_content">
           <chart></chart>
         </div>
-        <div class="tab_content" id="design_content">
-          デザインの内容がここに入ります
-        </div>
-
       </div>
     </vs-col>
   </vs-row>
@@ -95,6 +92,7 @@ export default {
 h1 {
   font-size: 3em;
 }
+
 .section1 {
   display: block;
   padding-top: 100px;
@@ -105,6 +103,7 @@ h1 {
   max-width: 90vw;
   border-radius: 50%;
 }
+
 #app {
   position: relative;
   z-index: 0;

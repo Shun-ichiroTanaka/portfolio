@@ -34,14 +34,14 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <h4>Contact</h4>
             <ul>
               <li>
                 <a href="/contact"><img src="/home/contact.svg" alt="" width="200"></a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <ul class="social">
             <li><a href="https://github.com/Shun-ichiroTanaka/" target="_blank" rel="noopener">
                 <svg class="main__svg" viewBox="0 0 496 512">
