@@ -1,6 +1,5 @@
 <template lang="html">
 <div class="con-example-images">
-
   <h1>Myworks</h1>
   <div class="work-details">
     <vs-collapse accordion>
@@ -97,20 +96,20 @@
       </vs-collapse-item>
     </vs-collapse>
   </div>
-
-  <vs-images :hover="hover" class="work-box">
-    <vs-image :src="`/works/work1.jpg`" />
-    <vs-image :src="`/works/work2.jpg`" />
-    <vs-image :src="`/works/work3.jpg`" />
-    <vs-image :src="`/works/work4.jpg`" />
-    <vs-image :src="`/works/work5.jpg`" />
-    <vs-image :src="`/works/work6.jpg`" />
-    <vs-image :src="`/works/work7.jpg`" />
-    <vs-image :src="`/works/work8.jpg`" />
-    <vs-image :src="`/works/work9.jpg`" />
-    <vs-image :src="`/works/work10.jpg`" />
-
-  </vs-images>
+  <div class="work-box">
+    <vs-images :hover="hover" class="work-gallery">
+      <vs-image :src="`/works/work1.jpg`" />
+      <vs-image :src="`/works/work2.jpg`" />
+      <vs-image :src="`/works/work3.jpg`" />
+      <vs-image :src="`/works/work4.jpg`" />
+      <vs-image :src="`/works/work5.jpg`" />
+      <vs-image :src="`/works/work6.jpg`" />
+      <vs-image :src="`/works/work7.jpg`" />
+      <vs-image :src="`/works/work8.jpg`" />
+      <vs-image :src="`/works/work9.jpg`" />
+      <vs-image :src="`/works/work10.jpg`" />
+    </vs-images>
+  </div>
 
 </div>
 </template>
@@ -134,12 +133,18 @@ h1 {
 }
 
 .work-box {
+  width: 100%;
+  margin: 50px auto;
+  background: #f2f2f2;
+}
+
+.work-gallery {
   width: 80vw;
-  margin: 100px auto;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 .work-details {
   font-family: "Noto Sans JP", sans-serif !important;
-  background: #f2f2f2;
 }
 </style>
