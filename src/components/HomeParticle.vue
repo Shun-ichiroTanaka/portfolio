@@ -148,6 +148,29 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script&display=swap");
 
+// メディアクエリ
+$media: 767px;
+@mixin pc {
+  @media (min-width: ($media)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($media)) {
+    @content;
+  }
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 html,
 body,
 #app {
@@ -159,7 +182,6 @@ body,
   margin: 0;
   font-family: "Kaushan Script", cursive !important;
 }
-
 #main {
   position: absolute;
   top: 50%;
@@ -231,7 +253,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@include pc {
   #author-name {
     position: absolute;
     bottom: 10px;

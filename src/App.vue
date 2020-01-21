@@ -16,7 +16,6 @@
 <script>
 import Nav from '@/components/Nav.vue';
 import GoTop from '@inotom/vue-go-top';
-import jQuery from 'jquery'
 window.$ = window.jQuery = require('jquery')
 
 export default {
@@ -112,6 +111,19 @@ figure {
   box-sizing: border-box;
 }
 
+// メディアクエリ
+$media: 767px;
+@mixin pc {
+  @media (min-width: ($media)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($media)) {
+    @content;
+  }
+}
+
 p {
   font-family: "Open Sans", 'Noto Sans JP', sans-serif !important;
   color: #2c3e50 !important;
@@ -200,15 +212,13 @@ p {
 }
 
 // =============================== vue-transition
-
-@media screen and (min-width: 1080px) {
+@include pc {
   .section1 {
     & img {
       max-width: 450px;
     }
   }
-
-}
-
-@media screen and (min-width: 768px) {}
+};
+@include sp {
+};
 </style>

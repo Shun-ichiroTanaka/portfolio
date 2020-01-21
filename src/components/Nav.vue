@@ -1,5 +1,5 @@
 <template>
-<div id="nav">
+<div id="nav" v-on:click="site-nav" role="navigation">
   <div class="hero">
     <header id="masthead" role="banner">
       <div class="container">
@@ -88,6 +88,18 @@ export default {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+// メディアクエリ
+$media: 767px;
+@mixin pc {
+  @media (min-width: ($media)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($media)) {
+    @content;
+  }
 }
 
 body {
@@ -178,13 +190,10 @@ header {
 }
 
 .hamburger {
-  top: 15px;
-  left: 15px;
   float: left;
   display: inline-block;
   overflow: visible;
-  padding: 10px 0;
-  padding: 0;
+  padding: 30px;
   color: inherit;
   font: inherit;
   text-transform: none;

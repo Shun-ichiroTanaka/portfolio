@@ -1,6 +1,9 @@
 <template lang="html">
 <div class="con-example-images">
   <h1>Myworks</h1>
+  <div class="video-container">
+    <video src="/home/goku.mp4" autoplay loop poster="" playsinline id="goku"></video>
+  </div>
   <div class="work-details">
     <vs-collapse accordion>
       <!-- ポートフォリオ -->
@@ -157,6 +160,33 @@ export default {
 </script>
 
 <style lang="scss">
+// メディアクエリ
+$media: 767px;
+@mixin pc {
+  @media (min-width: ($media)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($media)) {
+    @content;
+  }
+}
+.video-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .video-container {
+    height: 100vh;
+  }
+}
+
+@include sp {
+  .video-container {height: 100vh; }
+};
 .con-example-images {
   padding: 50px 0;
   margin: 0 auto;
