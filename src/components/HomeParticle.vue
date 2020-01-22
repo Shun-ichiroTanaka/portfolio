@@ -9,7 +9,7 @@
                 ]' initial-action='typing' :pre-type-delay='300' :type-delay='300' :pre-erase-delay='1500' :erase-delay='100' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth'></vue-typer>
       </div>
       <div id="main" class="has-text-centered">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to Myworks</h1>
         <vue-page-transition name="overlay-up-down">
         </vue-page-transition>
         <h2>I

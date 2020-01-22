@@ -1,9 +1,6 @@
 <template lang="html">
 <div class="con-example-images">
-  <h1>Myworks</h1>
-  <div class="video-container">
-    <video src="/home/goku.mp4" autoplay loop poster="" playsinline id="goku"></video>
-  </div>
+  <HomeParticle></HomeParticle>
   <div class="work-details">
     <vs-collapse accordion>
       <!-- ポートフォリオ -->
@@ -147,12 +144,17 @@
       <vs-image :src="`/works/work10.jpg`" />
     </vs-images>
   </div>
-
 </div>
 </template>
 
 <script>
+import HomeParticle from '@/components/HomeParticle.vue'
+
 export default {
+  name: 'myworks',
+  components: {
+    HomeParticle
+  },
   data: () => ({
     hover: 'curtain'
   })
@@ -172,21 +174,7 @@ $media: 767px;
     @content;
   }
 }
-.video-container {
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-}
 
-@media (min-width: 600px) {
-  .video-container {
-    height: 100vh;
-  }
-}
-
-@include sp {
-  .video-container {height: 100vh; }
-};
 .con-example-images {
   padding: 50px 0;
   margin: 0 auto;
