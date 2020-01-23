@@ -1,5 +1,6 @@
 <template lang="html">
 <div class="con-example-images">
+  <Nav></Nav>
   <HomeParticle></HomeParticle>
   <div class="work-details">
     <vs-collapse accordion>

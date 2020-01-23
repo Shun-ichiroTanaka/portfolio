@@ -2,15 +2,20 @@
   <div class="home">
     <div class="video-container">
       <video src="/home/goku.mp4" autoplay loop poster="" playsinline id="goku"></video>
+      <HomeNav></HomeNav>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import HomeNav from '@/components/HomeNav.vue'
 
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    HomeNav
+  },
 }
 </script>
 <style lang="scss">
@@ -35,12 +40,18 @@ $media: 767px;
 
 video {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
+  @include pc {
+        height: 95%;
+        width: 95%;
+  }
+  @include sp {
+        height: 100%;
+        width: 100%;
+  }
 }
 
 @include pc {

@@ -1,5 +1,6 @@
 <template>
 <div id="app">
+  <Nav></Nav>
   <vs-row vs-w="12" class="section1">
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
       <h1>About
@@ -12,7 +13,7 @@
       </h1>
     </vs-col>
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
-      <img src="/about/about-top.svg" alt="">
+      <img src="/about/profile.svg" alt="">
     </vs-col>
   </vs-row>
   <vs-row vs-w="12">
@@ -26,7 +27,7 @@
         <div class="tab_content" id="Profile">
           <vs-row vs-w="12">
             <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="5" vs-sm="5" vs-xs="12">
-              <img src="/about/profile.jpg" class="profile-img">
+              <img src="/about/about-top.svg" class="profile-img">
             </vs-col>
             <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="7" vs-sm="7" vs-xs="12">
               <div>
@@ -89,7 +90,9 @@ export default {
 </script>
 
 <style lang="scss">
-h1 {
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script&display=swap");
+h1, h2 {
+  font-family: "Kaushan Script", cursive !important;
   font-size: 3em;
 }
 

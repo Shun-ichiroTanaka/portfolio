@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="336.491" height="285.504" viewBox="0 0 336.491 285.504">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffff71"/>
+      <stop offset="1" stop-color="#e360bb"/>
+    </linearGradient>
+    <filter id="パス_820" x="0" y="0" width="336.491" height="285.504" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="滅" x="257.881" y="86.683" width="20.102" height="20.102" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="滅-2" x="258.07" y="92.109" width="20.398" height="20.399" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="滅-3" x="254.985" y="97.712" width="20.801" height="20.801" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="滅-4" x="252.081" y="100.171" width="20.825" height="20.825" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_15" data-name="グループ 15" transform="translate(-2821.209 -349.094)">
+    <g transform="matrix(1, 0, 0, 1, 2821.21, 349.09)" filter="url(#パス_820)">
+      <path id="パス_820-2" data-name="パス 820" d="M53.662,38.542c-1.681,2.219-2.329,5.335-3.055,8.277C44.773,70.467,30.4,89.5,14.033,103.079,7.1,108.834-1.339,116.556.179,126.871c.814,5.541,4.4,9.6,7.068,14.135,5.586,9.45,7.395,22.3,4.732,33.612-3.029,12.872-11.486,24.9-8.866,37.9,1.616,8.024,7.1,13.715,12.369,18.616Q27.815,242.6,40.936,252.606c5.864,4.474,12.1,8.828,18.933,9.393,6.018.5,11.911-1.985,17.622-4.442,4.991-2.134,10.109-4.378,14.139-8.679,2.616-2.806,4.729-6.431,7.65-8.725,6.868-5.4,15.679-1.974,23.548.324a75.983,75.983,0,0,0,56.122-5.588c27.109-13.871,47.773-42.948,74.28-58.559,11.4-6.715,23.8-10.88,34.36-19.527a67.947,67.947,0,0,0,15.1-17.784,82.1,82.1,0,0,0,11.061-47.174c-1.24-16.71-8.232-32.818-19.2-42.251-11.741-10.1-26.57-11.983-39.933-18.047-13.8-6.263-26.07-17.03-39.734-23.745a75.388,75.388,0,0,0-70.081,1.721C129.937,17.688,114.867,36.774,98.3,38.207,86.495,39.253,62.878,26.4,53.662,38.542Z" transform="matrix(1, 0.02, -0.02, 1, 13.57, 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="陰陽師" transform="translate(2928.215 357.771)">
+      <g id="晴明" transform="translate(0)" style="isolation: isolate">
+        <path id="顔" d="M1.126,0v4.9S-.554,4.264.19,7.836s2.9,4.413,2.9,4.413a51.246,51.246,0,0,0,2.947,5.679c.93,1.23,4.169,4.7,6.87,4.733s4.424-2.406,5.951-4.35a40.671,40.671,0,0,0,3.431-6.062s.638.23,2.542-2.089A11.957,11.957,0,0,0,25.773,6.5c-.025-.016.046-1.787-.178-1.7-.174-.124-.582.234-.567.236a.275.275,0,0,1-.455.1V4.489s-.008-.513,0-.525a12.363,12.363,0,0,0,0-1.312c.013.031,0-2.652,0-2.652Z" transform="translate(42.442 44.697)" fill="#fffdf5" stroke="#a3a3a3" stroke-width="0.6"/>
+        <g id="右手" transform="translate(68.387 71.351)">
+          <rect id="長方形_213" data-name="長方形 213" width="12.477" height="48.661" transform="translate(8.347 27.537)" fill="#80b2c7"/>
+          <path id="振袖" d="M.771,1.1l4.287.814L8,2.762V4.579L21.06,3.854l14.8,1.582s24.568-3.462,30.75-2.057c1.008.229,2.74,1.334,2.816,6.261.108,6.982-2.84,18.973-4.6,30.995-4.561,31.2-23.986,84.642-37.46,80.717C5.069,114.855.771,78.286.771,78.286s13.993.118,12.757-7.448,2.528-41.117,2.528-41.117L.771,27.358S0,10.419,0,3.854.771,1.1.771,1.1Z" fill="#fff" stroke="#a3a3a3" stroke-width="2"/>
+          <path id="右手振袖中" d="M.547,56.749c3.275-11.311,4.724-26.364,7.027-37.2C10.394,6.3,8.923-1,7.574.125,5.672.031,4.4-.37,3.868,1.034a16.785,16.785,0,0,0-.975,4.429c0,5.915-.526,15.325-.564,15.287C2.46,20.795-1.392,63.45.547,56.749Z" transform="translate(58.551 4.685)" fill="#b7d8e6" stroke="#707070" stroke-width="1"/>
+          <g id="指" transform="translate(61.404 7.075)">
+            <path id="右手先" d="M.573,0S7.634,1.107,9.694.314a8.756,8.756,0,0,1,2.616,1.531,10.709,10.709,0,0,0,2.951,1.7s-.18,2.141.524,2.471c.529.248-1.36,2.447-1.407,2.483a8.384,8.384,0,0,1-1.685.542c-.989.23,2.516,1.4,2.145,1.634s-4.3.672-4.714,0,.065-1.864-2.107-3.127c-1.095-.9-3.125-2.374-3.568-2.374-.6,0-4.45-.167-4.45-.167Z" fill="#fffdf5" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_797" data-name="パス 797" d="M0,0,1.435.284" transform="translate(13.107 7.855)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_796" data-name="パス 796" d="M.827,2.648s2.194.809,2.368,0S2.127,1.423.827,1.346C.4,1.321.4,1.145.232.876A2,2,0,0,1,0,0" transform="translate(11.012 8.416)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_795" data-name="パス 795" d="M2.086,1.185.972.793,0,0" transform="translate(12.991 4.876)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_793" data-name="パス 793" d="M0,0S2.542,2.115,4.292,1.566" transform="translate(8.615 2.649)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          </g>
+          <g id="札" transform="translate(53.231 2.273)">
+            <g id="_4" data-name="4" transform="translate(4.222 0)">
+              <path id="札4" d="M0,5.505,12.41,19.349l5.214-6.226L5,0Z" transform="translate(15.396 11.562) rotate(-41)" fill="#fdfbf1" stroke="#707070" stroke-width="1"/>
+              <g transform="matrix(1, 0, 0, 1, -232.85, -82.3)" filter="url(#滅)">
+                <text id="滅-5" data-name="滅" transform="translate(267.93 93.73) rotate(93)" fill="#b53636" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-0.5" y="0">滅</tspan></text>
+              </g>
+              <text id="摩訶般若波羅蜜_多心経般若心経_消災妙吉祥神呪消_災呪妙法蓮華経観_世音菩薩普門品第_二十五観音経大悲円_満無礙神呪大悲呪_開甘露施餓鬼仏頂_尊勝陀尼金剛般若_波羅蜜経金剛経_大仏頂万行首楞厳_神呪楞厳呪" data-name="摩訶般若波羅蜜
+多心経般若心経
+消災妙吉祥神呪消
+災呪妙法蓮華経観
+世音菩薩普門品第
+二十五観音経大悲円
+満無礙神呪大悲呪
+開甘露施餓鬼仏頂
+尊勝陀尼金剛般若
+波羅蜜経金剛経
+大仏頂万行首楞厳
+神呪楞厳呪" transform="matrix(-0.07, 0.998, -0.998, -0.07, 29.626, 14.328)" fill="#535353" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-3.5" y="0">摩訶般若波羅蜜</tspan><tspan y="0" font-family="Zapfino"></tspan><tspan x="-3.5" y="2">多心経般若心経</tspan><tspan y="2" font-family="Zapfino"></tspan><tspan x="-4" y="4">消災妙吉祥神呪消</tspan><tspan y="4" font-family="Zapfino"></tspan><tspan x="-4" y="6">災呪妙法蓮華経観</tspan><tspan y="6" font-family="Zapfino"></tspan><tspan x="-4" y="8">世音菩薩普門品第</tspan><tspan y="8" font-family="Zapfino"></tspan><tspan x="-4.5" y="10">二十五観音経大悲円</tspan><tspan y="10" font-family="Zapfino"></tspan><tspan x="-4" y="12">満無礙神呪大悲呪</tspan><tspan y="12" font-family="Zapfino"></tspan><tspan x="-4" y="14">開甘露施餓鬼仏頂</tspan><tspan y="14" font-family="Zapfino"></tspan><tspan x="-4" y="16">尊勝陀尼金剛般若</tspan><tspan y="16" font-family="Zapfino"></tspan><tspan x="-3.5" y="18">波羅蜜経金剛経</tspan><tspan y="18" font-family="Zapfino"></tspan><tspan x="-4" y="20">大仏頂万行首楞厳</tspan><tspan y="20" font-family="Zapfino"></tspan><tspan x="-2.5" y="22">神呪楞厳呪</tspan></text>
+            </g>
+            <g id="_3" data-name="3" transform="translate(3.088 4.461)">
+              <path id="札3" d="M0,5.505,12.41,19.349l5.214-6.226L5,0Z" transform="translate(16.71 9.077) rotate(-31)" fill="#fdfbf1" stroke="#707070" stroke-width="1"/>
+              <g transform="matrix(1, 0, 0, 1, -231.71, -86.76)" filter="url(#滅-2)">
+                <text id="滅-6" data-name="滅" transform="matrix(-0.22, 0.97, -0.97, -0.22, 268.27, 99.31)" fill="#b53636" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-0.5" y="0">滅</tspan></text>
+              </g>
+              <text id="摩訶般若波羅蜜_多心経般若心経_消災妙吉祥神呪消_災呪妙法蓮華経観_世音菩薩普門品第_二十五観音経大悲円_満無礙神呪大悲呪_開甘露施餓鬼仏頂_尊勝陀尼金剛般若_波羅蜜経金剛経_大仏頂万行首楞厳_神呪楞厳呪-2" data-name="摩訶般若波羅蜜
+多心経般若心経
+消災妙吉祥神呪消
+災呪妙法蓮華経観
+世音菩薩普門品第
+二十五観音経大悲円
+満無礙神呪大悲呪
+開甘露施餓鬼仏頂
+尊勝陀尼金剛般若
+波羅蜜経金剛経
+大仏頂万行首楞厳
+神呪楞厳呪" transform="translate(30.054 14.148) rotate(106)" fill="#535353" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-3.5" y="0">摩訶般若波羅蜜</tspan><tspan y="0" font-family="Zapfino"></tspan><tspan x="-3.5" y="2">多心経般若心経</tspan><tspan y="2" font-family="Zapfino"></tspan><tspan x="-4" y="4">消災妙吉祥神呪消</tspan><tspan y="4" font-family="Zapfino"></tspan><tspan x="-4" y="6">災呪妙法蓮華経観</tspan><tspan y="6" font-family="Zapfino"></tspan><tspan x="-4" y="8">世音菩薩普門品第</tspan><tspan y="8" font-family="Zapfino"></tspan><tspan x="-4.5" y="10">二十五観音経大悲円</tspan><tspan y="10" font-family="Zapfino"></tspan><tspan x="-4" y="12">満無礙神呪大悲呪</tspan><tspan y="12" font-family="Zapfino"></tspan><tspan x="-4" y="14">開甘露施餓鬼仏頂</tspan><tspan y="14" font-family="Zapfino"></tspan><tspan x="-4" y="16">尊勝陀尼金剛般若</tspan><tspan y="16" font-family="Zapfino"></tspan><tspan x="-3.5" y="18">波羅蜜経金剛経</tspan><tspan y="18" font-family="Zapfino"></tspan><tspan x="-4" y="20">大仏頂万行首楞厳</tspan><tspan y="20" font-family="Zapfino"></tspan><tspan x="-2.5" y="22">神呪楞厳呪</tspan></text>
+            </g>
+            <g id="_2" data-name="2" transform="translate(2.356 2.245)">
+              <path id="札2" d="M0,6.287l13.707,12.2,5.214-6.226L3.74,0Z" transform="matrix(0.996, -0.087, 0.087, 0.996, 17.452, 9.616)" fill="#fdfbf1" stroke="#707070" stroke-width="1"/>
+              <g transform="matrix(1, 0, 0, 1, -230.98, -84.55)" filter="url(#滅-3)">
+                <text id="滅-7" data-name="滅" transform="matrix(-0.6, 0.8, -0.8, -0.6, 265.39, 105.11)" fill="#b53636" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-0.5" y="0">滅</tspan></text>
+              </g>
+              <text id="摩訶般若波羅蜜_多心経般若心経_消災妙吉祥神呪消_災呪妙法蓮華経観_世音菩薩普門品第_二十五観音経大悲円_満無礙神呪大悲呪_開甘露施餓鬼仏頂_尊勝陀尼金剛般若_波羅蜜経金剛経_大仏頂万行首楞厳_神呪楞厳呪-3" data-name="摩訶般若波羅蜜
+多心経般若心経
+消災妙吉祥神呪消
+災呪妙法蓮華経観
+世音菩薩普門品第
+二十五観音経大悲円
+満無礙神呪大悲呪
+開甘露施餓鬼仏頂
+尊勝陀尼金剛般若
+波羅蜜経金剛経
+大仏頂万行首楞厳
+神呪楞厳呪" transform="matrix(-0.559, 0.829, -0.829, -0.559, 28.244, 19.64)" fill="#535353" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-3.5" y="0">摩訶般若波羅蜜</tspan><tspan y="0" font-family="Zapfino"></tspan><tspan x="-3.5" y="2">多心経般若心経</tspan><tspan y="2" font-family="Zapfino"></tspan><tspan x="-4" y="4">消災妙吉祥神呪消</tspan><tspan y="4" font-family="Zapfino"></tspan><tspan x="-4" y="6">災呪妙法蓮華経観</tspan><tspan y="6" font-family="Zapfino"></tspan><tspan x="-4" y="8">世音菩薩普門品第</tspan><tspan y="8" font-family="Zapfino"></tspan><tspan x="-4.5" y="10">二十五観音経大悲円</tspan><tspan y="10" font-family="Zapfino"></tspan><tspan x="-4" y="12">満無礙神呪大悲呪</tspan><tspan y="12" font-family="Zapfino"></tspan><tspan x="-4" y="14">開甘露施餓鬼仏頂</tspan><tspan y="14" font-family="Zapfino"></tspan><tspan x="-4" y="16">尊勝陀尼金剛般若</tspan><tspan y="16" font-family="Zapfino"></tspan><tspan x="-3.5" y="18">波羅蜜経金剛経</tspan><tspan y="18" font-family="Zapfino"></tspan><tspan x="-4" y="20">大仏頂万行首楞厳</tspan><tspan y="20" font-family="Zapfino"></tspan><tspan x="-2.5" y="22">神呪楞厳呪</tspan></text>
+            </g>
+            <g id="_1" data-name="1" transform="translate(0 2.808)">
+              <path id="札1" d="M0,6.287l13.707,12.2,5.214-6.226L3.74,0Z" transform="translate(18.051 10.159)" fill="#fdfbf1" stroke="#707070" stroke-width="1"/>
+              <g transform="matrix(1, 0, 0, 1, -228.62, -85.11)" filter="url(#滅-4)">
+                <text id="滅-8" data-name="滅" transform="matrix(-0.67, 0.74, -0.74, -0.67, 262.49, 107.58)" fill="#b53636" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-0.5" y="0">滅</tspan></text>
+              </g>
+              <text id="摩訶般若波羅蜜_多心経般若心経_消災妙吉祥神呪消_災呪妙法蓮華経観_世音菩薩普門品第_二十五観音経大悲円_満無礙神呪大悲呪_開甘露施餓鬼仏頂_尊勝陀尼金剛般若_波羅蜜経金剛経_大仏頂万行首楞厳_神呪楞厳呪-4" data-name="摩訶般若波羅蜜
+多心経般若心経
+消災妙吉祥神呪消
+災呪妙法蓮華経観
+世音菩薩普門品第
+二十五観音経大悲円
+満無礙神呪大悲呪
+開甘露施餓鬼仏頂
+尊勝陀尼金剛般若
+波羅蜜経金剛経
+大仏頂万行首楞厳
+神呪楞厳呪" transform="translate(27.236 21.48) rotate(129)" fill="#535353" font-size="1" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-3.5" y="0">摩訶般若波羅蜜</tspan><tspan y="0" font-family="Zapfino"></tspan><tspan x="-3.5" y="2">多心経般若心経</tspan><tspan y="2" font-family="Zapfino"></tspan><tspan x="-4" y="4">消災妙吉祥神呪消</tspan><tspan y="4" font-family="Zapfino"></tspan><tspan x="-4" y="6">災呪妙法蓮華経観</tspan><tspan y="6" font-family="Zapfino"></tspan><tspan x="-4" y="8">世音菩薩普門品第</tspan><tspan y="8" font-family="Zapfino"></tspan><tspan x="-4.5" y="10">二十五観音経大悲円</tspan><tspan y="10" font-family="Zapfino"></tspan><tspan x="-4" y="12">満無礙神呪大悲呪</tspan><tspan y="12" font-family="Zapfino"></tspan><tspan x="-4" y="14">開甘露施餓鬼仏頂</tspan><tspan y="14" font-family="Zapfino"></tspan><tspan x="-4" y="16">尊勝陀尼金剛般若</tspan><tspan y="16" font-family="Zapfino"></tspan><tspan x="-3.5" y="18">波羅蜜経金剛経</tspan><tspan y="18" font-family="Zapfino"></tspan><tspan x="-4" y="20">大仏頂万行首楞厳</tspan><tspan y="20" font-family="Zapfino"></tspan><tspan x="-2.5" y="22">神呪楞厳呪</tspan></text>
+            </g>
+          </g>
+          <g id="筋" transform="translate(21.85 19.827)">
+            <path id="パス_789" data-name="パス 789" d="M0,0S7.773,15.967,12.352,15.686" transform="translate(10.024 7.171)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_788" data-name="パス 788" d="M.638,0A44.874,44.874,0,0,1,1.15,8.25c-.058,2.4.708,5.411-1.149,8.047" transform="translate(0 11.357)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_790" data-name="パス 790" d="M3.8,0S3.353,27.917,0,36.295" transform="translate(25.055)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          </g>
+          <path id="パス_800" data-name="パス 800" d="M1.53,0c.03.049-.393,8.638-.487,8.61.059.046-1.121.54-1.035.313C-.079,8.8.553.081.53,0A3.792,3.792,0,0,0,1.53,0Z" transform="translate(57.777 17.758)" fill="#80b2c7"/>
+          <path id="パス_801" data-name="パス 801" d="M1.685,0c.033.049-.433,8.64-.537,8.613.065.046-1.234.54-1.139.313C-.087,8.805.609.081.583,0A4.593,4.593,0,0,0,1.685,0Z" transform="translate(57.216 27.857)" fill="#80b2c7"/>
+          <path id="パス_802" data-name="パス 802" d="M1.106,0C1.128.016.822,2.908.754,2.9.8,2.914-.057,3.08.006,3-.057,2.963.4.027.383,0A5.858,5.858,0,0,0,1.106,0Z" transform="translate(56.831 38.006) rotate(-3)" fill="#80b2c7"/>
+          <path id="パス_803" data-name="パス 803" d="M1.106,0C1.128.016.822,2.908.754,2.9.8,2.914-.057,3.08.006,3-.057,2.963.4.027.383,0A5.858,5.858,0,0,0,1.106,0Z" transform="translate(56.551 42.216) rotate(-3)" fill="#80b2c7"/>
+          <path id="パス_804" data-name="パス 804" d="M1.106,0C1.128.016.822,2.908.754,2.9.8,2.914-.057,3.08.006,3-.057,2.963.4.027.383,0A5.858,5.858,0,0,0,1.106,0Z" transform="translate(56.27 46.145) rotate(-3)" fill="#80b2c7"/>
+          <path id="パス_805" data-name="パス 805" d="M1.54.292,1.134,4.617.9,9.171.714,12.624c.053.081-.785,3.544-.707,3.145C-.071,15.555.5.143.476,0,.441.11,1.527.337,1.54.292Z" transform="translate(55.72 50.089) rotate(-3)" fill="#80b2c7"/>
+        </g>
+        <path id="白背景" d="M3.089,113S-1.173,148.052.315,149.952s58.592,11.432,58.083,1.5-3.745-119.273.97-124.72S44.563,0,44.563,0a60.4,60.4,0,0,1-12.02,1.727C24.941,2.176,3.089,113,3.089,113Z" transform="translate(23.756 75.604)" fill="#fff"/>
+        <g id="胴体" transform="translate(8.336 0)">
+          <rect id="長方形_214" data-name="長方形 214" width="13.725" height="17.468" transform="translate(39.701 58.961)" fill="#fffdf5"/>
+          <path id="帽子" d="M11.758.017C2.857-1.069,0,48.805,0,48.805s23.354.227,23.528,0S20.66,1.1,11.758.017Z" transform="translate(35.232)" fill="#212128"/>
+          <path id="パス_779" data-name="パス 779" d="M16.913,1.572s-4.3,28.606-4.771,29.9-3.568,8.181-4.4,8.759c-.55.38-2.739,8.339-4.846,14.544C1.837,57.886.244,60.5.064,61.482a12.605,12.605,0,0,0,2.529,8.392,18.833,18.833,0,0,0,9.532,6.268c-1.16.621-1.044,2.041-.854,3.492a11.075,11.075,0,0,0,.854,3.854,7.944,7.944,0,0,0,4.192,3.5,12.964,12.964,0,0,0,3.54.833A26.565,26.565,0,0,0,31.57,84.6l.013-.007c.3-.171,5.942-2.517,5.886-2.578a27.207,27.207,0,0,0,7.387-8.323c-.028-.022,7.313,10.12,13.558,7.456a27.006,27.006,0,0,0,3.18,2.4,14.679,14.679,0,0,1,3.171,2.5c1.2,1.328,1.839,3.212,5.985,3.623,4.927.489,9.576.678,12.56-.426a4.1,4.1,0,0,0,2.9-3.959c.048-.663.459-1.418,0-2.17-2.735-4.49-14-4.657-10.585-6.472S97.364,67.82,94.448,63.72c-1.015-1.427,1.928-10.7-1.749-14.271C89.354,46.2,84.391,25.5,81.732,22.5c-2.115-2.383-6.679-9.847-7.089-19.99A2.645,2.645,0,0,0,73.339,0c-.018,0,.279,27.51,0,40.232-.11.323-11.729,2.781-14.468,3.212-2.636.415-5.406.588-8.59.863a43.649,43.649,0,0,1-8.159.328c-19.28-1.786-25.906-5.242-26.6-6.529s1.7-34.134,2.625-35.594S16.913,1.572,16.913,1.572Z" transform="translate(0 182.356)" fill="#b7d8e6" stroke="#707070" stroke-width="2"/>
+          <path id="胴体縦筋" d="M6.4,0S3.942,49.637,2.028,90.15C.743,117.328-.565,140.651.256,141.338" transform="translate(41.221 76.979)" fill="none" stroke="#a3a3a3" stroke-width="2"/>
+          <path id="パス_773" data-name="パス 773" d="M2.96,83.264S-1.293,118.536.4,119.27c.322.14,5.286,5.089,25.634,6.251,6.08.059,31.526-2.963,31.592-4.649.209-5.322.749-24.556,0-35.52S56.261,2.329,59.608,0" transform="translate(15.466 101.427)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_774" data-name="パス 774" d="M7.124,4.138V7.619l-3.5,4.2H.86L0,10.979l.268-2.72V7.03l.905-.28A18.1,18.1,0,0,0,4.594,3.492a10.087,10.087,0,0,0,1.49-1.951L6.9,0Z" transform="translate(47.018 61.893)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_775" data-name="パス 775" d="M.708.782,5,5.418,4.352,8.126,0,4.269V0Z" transform="translate(40.438 63.137)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_777" data-name="パス 777" d="M9.232,3.706c-.121.039-6.508-1.253-6.434-2.16S.9-.862.45.636A6.242,6.242,0,0,0,.032,3.15c.08,0,2.073,1.419,2.378,1.515a7.051,7.051,0,0,0,1.517.841A26.311,26.311,0,0,0,7.909,6.739C8.409,6.74,9.354,3.667,9.232,3.706Z" transform="translate(34.745 70.012)" fill="#fff" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_778" data-name="パス 778" d="M.307,0,0,2.634" transform="translate(37.24 71.79)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_776" data-name="パス 776" d="M0,0V1.039L4,5.113" transform="translate(40.409 67.358)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_780" data-name="パス 780" d="M0,0V23.767l.854,1.91" transform="translate(42.477 228.628)" fill="none" stroke="#8d8d8d" stroke-width="2"/>
+          <path id="パス_772" data-name="パス 772" d="M7.651,0S7.333,4.154,7.36,4.194c1.442.176,2.765,2.34,2.564,4.332.043.049,1.292,2.847.922,3.019-.529.245-6.608.732-7.277,1.125A16.55,16.55,0,0,1,0,12.294L.249,10.96l.919.794H3.916L7.36,7.4c-.027-.029,0-3.209,0-3.209Z" transform="translate(46.766 62.127)" fill="#b7d8e6"/>
+          <path id="パス_792" data-name="パス 792" d="M0,0S9.442,8.791,9.633,15.338" transform="translate(77.857 83.742)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="首" d="M0,5.621s12.945-.155,13.337-1.829S13.316.064,12.611.006a8.118,8.118,0,0,0-2.072.339L11.068,2.5S1.618,4.033.44,3.22c0-.01-.2,1.029-.195,1.031s-.113.689-.127.677S0,5.615,0,5.621Z" transform="translate(46.491 71.302)" fill="#fff" stroke="#a3a3a3" stroke-width="1"/>
+        </g>
+        <g id="左手" transform="translate(0 63.037)">
+          <g id="左振袖模様" transform="translate(0 59.354)">
+            <path id="パス_745" data-name="パス 745" d="M4.532,0S1.182,28.882,2.479,46.5C2.843,51.471-.131,58.077,0,64.65c.965,9.619,1.085,25.184,3.51,28.683.536,5.559.01,9.99.84,9.808.069.21,5.816-5.262,9.363-14.174,2.172-5.46,5.016-18.946,4.966-18.918,1.242-5.89,4.1-20.068,4.025-20.053,1.847-3.056,5.141-16.246,4.44-18.732C24.708,22.6,4.532,0,4.532,0Z" fill="#fff" stroke="#a3a3a3" stroke-width="1"/>
+            <path id="パス_747" data-name="パス 747" d="M1.189,0,0,3.412l2.211-.776L3.092,0Z" transform="translate(6.295 67.476)" fill="#80b2c7"/>
+            <path id="パス_748" data-name="パス 748" d="M2.365,0S-.2,8.8.013,10.066s.932,4.9,1.2,4.012S3.437.34,4.151.428,2.365,0,2.365,0Z" transform="translate(1.864 77.867)" fill="#80b2c7"/>
+            <path id="パス_749" data-name="パス 749" d="M22.659,0a35.26,35.26,0,0,0-3.94,7.63c-.891,2.333-.855,5.557-2,8.147-1.319,4.191-5.378,9.366-5.6,10.664-.187,1.074-1.4,5.538-3.225,11.038-.942,2.839-2.257,5.837-3.268,9.149C4.752,46.732.309,59.58,0,71.592c2.3-.9,6.444-6.9,9.268-13.9a178.8,178.8,0,0,0,5.623-21.013c1.027-5.294,3.457-17.9,3.391-17.965,1.359-2.393,3.271-9.982,3.677-11.622A35.374,35.374,0,0,0,22.659,0Z" transform="translate(4.397 31.355)" fill="#80b2c7" stroke="#707070" stroke-width="1"/>
+          </g>
+          <path id="パス_741" data-name="パス 741" d="M38.416,0S17.943,10.567,1.128,46.148c-4.795,10.145,7.074,18.491,9.891,29.1,3.436,12.939-.718,27.718,8.069,34.338,3.3,2.49,7.108,2.613,11.033,2.92a72.592,72.592,0,0,0,13.06-.286s8.924-3.975,8.794-8.595c-.106-3.782,17.748-16.882-1.069-27.447-1.411.123-6.538.263-8.629-.93-.528-.3-2.23-.19-3.412-.511-1.028-.279-1.538-.989-2.206-1.212-2.119-.706-1.745-1.379-2.913-2.272-.235-.183-.557-2.044-.675-2.09-.132-.02,1.2-1.712,1.2-1.818a21.817,21.817,0,0,0,1.491-2.024c-.015.1,3.146-4.495,3.107-4.5l3.973-5.748,1.449-6.254h0c1.385-9.067-2.3-12.8-3.085-17.779A30.453,30.453,0,0,1,42.714,17.1s1.127-7.368,2.041-8.964,1.98-4.067,1.839-4.5-3.356-.6-5.465-2A17.744,17.744,0,0,0,38.416,0Z" transform="translate(4.532 10.187)" fill="#fff" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_740" data-name="パス 740" d="M2.686,0V1.073S1.038,4.454,1.23,5.809c.058.408-.937.647-1.1,1.136a3.414,3.414,0,0,0,0,1.827l2.558,1.263,3.681.54c.095-.13.708-2.29.708-2.29L2.936,4.5a10.357,10.357,0,0,1-.118-3.185A1.388,1.388,0,0,0,2.686,0Z" transform="translate(45.948)" fill="#b7d8e6"/>
+          <path id="パス_742" data-name="パス 742" d="M4.137,0A19.024,19.024,0,0,0,1.485,9.184a52.8,52.8,0,0,0,.526,12.261c.111,2.292-.216,8.363-.175,8.4-.066.064-1.8.482-1.8.482a32.741,32.741,0,0,0,.392-9.449C-.337,14.312.026,6.089.721,5.184.75,4.324,3.16.081,3.138,0A3.794,3.794,0,0,0,4.137,0Z" transform="translate(39.357 30.843)" fill="#80b2c7"/>
+          <path id="パス_743" data-name="パス 743" d="M10.766.725,12.914,0l-8.4,14.973L2.421,19.291,1.5,24.027l.293,5.465,1.443,4.07L5.074,36.3l3.343,2.613-.963,1.022-3.326-2.78L1.794,34.073.236,29.935,0,24.027l.94-5.267L10.766,1.6Z" transform="translate(27.849 62.081)" fill="#80b2c7"/>
+          <path id="パス_744" data-name="パス 744" d="M0,.9,1.086,0S5.944,3.935,6.762,7.864c.562,2.7.765,5.776,0,8.01-.44,2.693-.029,5.428.665,5.7,0,.027-1.266.33-1.266.33l-.478-1.037L5.517,19.3V16.095l.342-1.112.16-1.336.144-1.573L5.941,9.8,5.517,7.988,4.854,6.209,4.038,4.925l-.887-1.3L2.277,2.71Z" transform="translate(36.637 101.815)" fill="#80b2c7"/>
+          <path id="パス_746" data-name="パス 746" d="M5.245,0h1.82s-.19,1.988-.228,2.007c-.06.136-1.321,2.365-1.321,2.4S3.843,8.52,3.6,9.127c-1.48,3.71-1.233,4.219-1.036,5.228a20.665,20.665,0,0,1-2.542,0C-.413,13.459,5.632.76,5.245,0" transform="translate(9.431 106.022)" fill="#80b2c7"/>
+          <path id="パス_750" data-name="パス 750" d="M6.168,0S-.748,16.053.066,17.425" transform="translate(38.995 11.315)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_751" data-name="パス 751" d="M.788,2.872,0,5.724S14.488.941,15.85,1.748,18.761,0,18.761,0" transform="translate(28.433 26.918)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_752" data-name="パス 752" d="M17.179,0,16.157,1.822S7.172,3.28,0,18.834" transform="translate(27.49 28.74)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_753" data-name="パス 753" d="M10.316,0S2.13,4.309,0,8.7" transform="translate(27.498 29.779)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_754" data-name="パス 754" d="M0,2.056S2.042,3.659,6.86,0" transform="translate(27.245 32.074)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_755" data-name="パス 755" d="M0,2.772,4.209,0" transform="translate(27.245 33.912)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_756" data-name="パス 756" d="M0,0S5.273,6.928,5.364,8.266,7.09,16.09,7.09,16.09" transform="translate(19.358 42.837)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_757" data-name="パス 757" d="M0,0,2.9,6.014" transform="translate(21.644 53.84)" fill="#fff" stroke="#707070" stroke-width="1"/>
+          <path id="パス_758" data-name="パス 758" d="M17.216,0s-3.944,4-8.8,9.263C3.42,13.341,0,17.344,0,17.8" transform="translate(30.122 65.295)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_759" data-name="パス 759" d="M10.131,0S-4.1,13.772,1.168,19.448C2.6,20.992,4.052,23.464,4.15,23.462c-.04.036,4.752,3.582,5.981,3.8.792.138,6.556,2.555,7.125,7.6-.1,2.95-1.875,7.363-2.5,10.323-.607,2.882.285,4.138,1.635,4.9.729.411,1.012-.2,1.879-.987,2.587-2.333,5.771-9.02,5.764-10.871A41.853,41.853,0,0,1,27.3,31.41" transform="translate(32.228 71.745)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_760" data-name="パス 760" d="M4.705,0s-10.817,11.753.353,15.542c5.048,1.713,3.978,1.115,3.87,1.176-.032.1,4.979.456,5.152.541.315.156,13.27,10.665-3.477,25.263" transform="translate(37.044 72.994)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_761" data-name="パス 761" d="M0,.183S15.122-.731,17.246,1.529" transform="translate(43.187 88.513)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_762" data-name="パス 762" d="M14.651,26.284S-.154,13.66.007,11.49A8.891,8.891,0,0,1,1.158,6.1,29.877,29.877,0,0,1,4.634,0" transform="translate(33.576 76.562)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_764" data-name="パス 764" d="M0,33.925l2.42-.861s3.307-2.449,3.3-2.451c-.075.065,4.173-3.2,4.344-3.87.293-1.143,1.938-4.374,1.95-5.375.006-.5.614-1.222.633-1.3-.032.024.35-1.847.342-1.878.636-.839,1.864-3.66,1.461-4.973s-1.4.221-1.461.217-.857.808-.976.317a24.212,24.212,0,0,0-1.95-2.621c-.525-.8-.194.33-1,.33-.5,0,.715-3.875,1-7.574A8.792,8.792,0,0,0,9.642.341c-.033.012-1.1-.774-1.067,0S7.017,7.9,5.717,9.766c-.3.435-.879,2.476-.941,2.428-1.75,3.143-3.055,9.069-2.887,10.838.1,1.021-.758.617-1.385,5.386C.52,28.487,0,33.925,0,33.925Z" transform="translate(45.421 3.979)" fill="#fffdf5" stroke="#707070" stroke-width="1"/>
+          <path id="パス_765" data-name="パス 765" d="M3.485,0S2.591,7.587,1.59,10.027a5.608,5.608,0,0,1-.735,1.041C.846,11.11,0,12.128,0,12.128" transform="translate(50.231 5.886)" fill="none" stroke="#717171" stroke-width="1"/>
+          <path id="パス_766" data-name="パス 766" d="M2.753,0S1.16,2.054,0,2.227" transform="translate(51.502 15.484)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_767" data-name="パス 767" d="M4.769,0A17.106,17.106,0,0,1,4.9,1.739,1.154,1.154,0,0,1,4.423,2.81c-.242.213-.659-.886-.645-.826C2.753,1.146,2.567-.011,2.248,0,1.812.016.981,1.774,0,1.739" transform="translate(52.958 18.258)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_768" data-name="パス 768" d="M.9.953S-.149.182.019,0" transform="translate(57.336 21.074)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_769" data-name="パス 769" d="M4.678.175,0,0" transform="translate(51.873 20.084)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_770" data-name="パス 770" d="M0,.734,1.791.6s.707-.59.68-.6.555.428.513.412c0,.03.541.3.568.549a1.629,1.629,0,0,1-.161.911c.007.075.878.407.878.871V3.932" transform="translate(52.958 22.47)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_771" data-name="パス 771" d="M4.053,0,3.9,1.465H3.359A9.826,9.826,0,0,1,0,10.55" transform="translate(50.698 23.07)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+          <path id="パス_763" data-name="パス 763" d="M2.058,0s4.69,19.368,0,27.644c-1.224,2.16,1.5-5.874,1-6.341.772-3.748-.46-10.971-1.477-12.594C.917,7.137.462,3.993.348,4.08.317,3.9-.018.75,0,.79-.087.769,2.058,0,2.058,0Z" transform="translate(45.605 37.294)" fill="#80b2c7" stroke="#a3a3a3" stroke-width="0.5"/>
+        </g>
+        <g id="足" transform="translate(19.559 240.3)">
+          <path id="パス_784" data-name="パス 784" d="M1.506,2.4,3.692.929,8.449,4.092,16.417,0l8.247,3.1,2.517,1.574.691,1.5-.438,2.607-.935,1.79-2.13,1.078-2.495.323-3.649.218H15.439l-2.38-.218-3.041-.655-1.75-.944L6.4,8.034,4.115,6.18,0,3.4Z" transform="translate(47.123 19.634)" fill="#202127"/>
+          <path id="パス_785" data-name="パス 785" d="M30.094,1.644,18.527,5.267a3.242,3.242,0,0,1-3.012,0C14.082,4.4,10.032.294,7.829.711S3.572.493,3.33.067.5,1.384.279,1.011,0,3.346,0,3.346L.279,4.621V5.931L.873,7.314,2.146,8.852,3.33,9.8l1.276.8,1.456.553,1.421.525H9.762l1.322-.274,1.345-.251,1.989-.352,1.309-.439L17.454,9.8l1.794-.948,1.342-.668,1.453-.669,1.549-.552,1.276-.546L26.1,5.7,27.493,4.66l1.415-1.314Z" transform="translate(0 17.981)" fill="#202126"/>
+          <path id="パス_781" data-name="パス 781" d="M19.686,0s-.152,22.982-9.376,22.118S0,3.76,0,3.76" transform="translate(45.444)" fill="none" stroke="#a3a3a3" stroke-width="2"/>
+          <path id="パス_782" data-name="パス 782" d="M0,0S5.338,19.9,13.558,10.758" transform="translate(11.897 8.844)" fill="none" stroke="#a3a3a3" stroke-width="2"/>
+          <path id="パス_783" data-name="パス 783" d="M0,0S7.457,31.15,15.256,20.861" transform="translate(0.569)" fill="none" stroke="#a3a3a3" stroke-width="2"/>
+        </g>
+        <path id="パス_798" data-name="パス 798" d="M0,0V16.947" transform="translate(68.23 75.556)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+        <path id="パス_799" data-name="パス 799" d="M0,0S7.271,4.522,7.434,10.317" transform="translate(76.702 82.633)" fill="none" stroke="#a3a3a3" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

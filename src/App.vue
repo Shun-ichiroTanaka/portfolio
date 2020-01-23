@@ -1,10 +1,7 @@
 <template>
 <div id="app">
-
-  <Nav></Nav>
   <vue-scroll-progress-bar @complete="handleCoplete" height="0.25rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
   <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
-
   <vue-page-transition name="overlay-up-down">
     <transition>
       <router-view />
@@ -15,12 +12,14 @@
 
 <script>
 import Nav from '@/components/Nav.vue';
+import HomeNav from '@/components/HomeNav.vue';
 import GoTop from '@inotom/vue-go-top';
 window.$ = window.jQuery = require('jquery')
 
 export default {
   components: {
     Nav,
+    HomeNav,
     GoTop,
   },
   data() {
