@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div class="video-container">
+      <h2>Welcome to My Portfolio</h2>
       <video id="video" muted src="home/goku.mp4" autoplay webkit-playsinline playsinline loop></video>
       <div class="overlay"></div>
       <HomeNav></HomeNav>
@@ -18,6 +19,7 @@ export default {
 }
 </script>
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script&display=swap");
 // メディアクエリ
 $media: 767px;
 @mixin pc {
@@ -36,7 +38,16 @@ $media: 767px;
   overflow: hidden;
   height: 50vh;
 }
-
+h2 {
+  font-size: 4em;
+  font-family: "Kaushan Script", cursive !important;
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
 .overlay {
   width: 100%;
   height: 100vh;

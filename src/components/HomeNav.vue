@@ -7,7 +7,7 @@
         <div class="icon contact"><a href="/contact"><font-awesome-icon icon="envelope"></font-awesome-icon></a></div>
       </div>
       <div class="navtitle">
-        <h1><a href="/">Portfolio</a></h1>
+        <h1><a href="/">S.tanaka</a></h1>
       </div>
     </div>
 </template>
@@ -49,7 +49,7 @@ $media: 767px;
   text-align: center;
   @include pc {
     top: 0;
-    width: 80px;
+    width: 6vw;
     height: 100%;
     flex-direction: column;
   }
@@ -71,7 +71,7 @@ $media: 767px;
   align-items: center;
   @include pc {
     justify-content: flex-start;
-    height: 60px;
+    height: 8vh;
   }
   @include sp {
     justify-content: center;
@@ -88,7 +88,7 @@ $media: 767px;
       color: rgb(255, 255, 255) !important;
       -webkit-text-stroke: .01px #000;
        &:hover {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         transition: .3s ease;
       }
     }

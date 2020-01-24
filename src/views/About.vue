@@ -1,21 +1,6 @@
 <template>
 <div id="app">
   <Nav></Nav>
-  <vs-row vs-w="12" class="section1">
-    <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
-      <h1>About
-        <vue-typer :text='[
-                  " Me",
-                  " Profile",
-                  " Skills",
-                  " Dream",
-                ]' :repeat='Infinity' :shuffle='false' initial-action='typing' :pre-type-delay='100' :type-delay='100' :pre-erase-delay='1500' :erase-delay='20' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth'></vue-typer>
-      </h1>
-    </vs-col>
-    <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="6" vs-sm="6" vs-xs="12">
-      <img src="/about/profile.svg" alt="">
-    </vs-col>
-  </vs-row>
   <vs-row vs-w="12">
     <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="12" vs-sm="12" vs-xs="12">
       <div class="tabs">

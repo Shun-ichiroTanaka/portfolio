@@ -141,6 +141,7 @@
       <vs-image :src="`/works/work8.jpg`" />
       <vs-image :src="`/works/work9.jpg`" />
       <vs-image :src="`/works/work10.jpg`" />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rYAZzAK-Akw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </vs-images>
   </div>
 </div>
