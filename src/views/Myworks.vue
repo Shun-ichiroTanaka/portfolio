@@ -14,7 +14,7 @@
         ソースコード管理 / git<br>
         <!-- プロジェクト管理 / backlog -->
         <!-- 情報共有ツール / slack -->
-        その他 / MAMP,　Firebase<br><br>
+        その他 / MAMP, Firebase<br><br>
         VueでSPA構築。WebpackとBabelを導入しgulpでコンパイルという手もあったが、 <br>
         今回は各ページにSassを書く形にした。<br>
         当初GithubPageに公開しようと思ったが、vueファイルは公開できなかったためFirebaseを選択した。<br>
@@ -43,9 +43,7 @@
         フレームワーク / Vue.js<br>
         <!-- データベース / mysql -->
         ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP,　Firebase<br>
+        その他/MAMPFirebase<br>
         <br>
         基本的なCRUD処理と決済システムが詰め込まれており練習になるので<br>
         アウトプットにEC系統を続けて選択
@@ -59,7 +57,7 @@
         データベース / mysql
         ソースコード管理 / git<br>
         その他 / MAMP<br>
-        Web開発環境　/　MAMP <br><br>
+        Web開発環境 / MAMP <br><br>
         バックエンドにLaravelを選択し作成(現在も作成途中)。<br>
         消費者側の実装は一通り完了したが、売り手側(管理者側)の実装に<br>
         oyagerというLaravelの管理テンプレートを使用したところ、<br>

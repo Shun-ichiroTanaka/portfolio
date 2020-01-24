@@ -47,7 +47,6 @@
       <dd class="percentage percentage-20"><span class="text">GAE</span></dd>
       <dd class="percentage percentage-20"><span class="text">AWS</span></dd>
     </dl>
-    </dl>
   </div>
 </div>
 </template>

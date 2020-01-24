@@ -31,10 +31,6 @@ window.$ = window.jQuery = require('jquery')
 import moment from 'vue-moment'
 Vue.use(moment)
 
-import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css' //Vuesax styles
-Vue.use(Vuesax)
-
 import 'particles.js'
 
 // fontawesome

@@ -68,11 +68,8 @@
 
 </div>
 </template>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-import jQuery from 'jquery'
-window.$ = window.jQuery = require('jquery')
-
 import Chart from '@/components/Chart.vue';
 
 export default {

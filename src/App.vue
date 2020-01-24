@@ -9,17 +9,13 @@
   </vue-page-transition>
 </div>
 </template>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-import Nav from '@/components/Nav.vue';
-import HomeNav from '@/components/HomeNav.vue';
 import GoTop from '@inotom/vue-go-top';
 window.$ = window.jQuery = require('jquery')
 
 export default {
   components: {
-    Nav,
-    HomeNav,
     GoTop,
   },
   data() {

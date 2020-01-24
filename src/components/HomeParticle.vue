@@ -161,16 +161,6 @@ $media: 767px;
   }
 }
 
-video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 html,
 body,
 #app {

@@ -56,8 +56,9 @@ $media: 767px;
   @include sp {
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 10vh;
+    line-height: 10vh;
+    position: fixed;
   }
 }
 .navtitle {
@@ -66,24 +67,35 @@ $media: 767px;
   box-shadow: 0 1px 3px rgba(160,166,179,.3);  
   background:  rgb(247, 247, 247) !important;
   width: 100%;
-  height: 60px;
   display: flex;
   align-items: center;
   @include pc {
     justify-content: flex-start;
+    height: 60px;
   }
   @include sp {
     justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
+
   }
 
   a {
     text-decoration: none;
-    color: rgb(255, 255, 255) !important;
     cursor: pointer;
-    -webkit-text-stroke: .01px #000;
     @include pc {
       padding-left: 20px;
-  }
+      color: rgb(255, 255, 255) !important;
+      -webkit-text-stroke: .01px #000;
+       &:hover {
+        font-size: 2.5rem;
+        transition: .3s ease;
+      }
+    }
+    @include sp {
+      padding-left: 0;
+      color: rgb(49, 49, 49) !important;
+    }
 }
 }
 .icon {
@@ -91,6 +103,10 @@ $media: 767px;
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 1.5rem;
+      &:hover {
+        font-size: 2.5rem;
+        transition: .3s ease;
+      }
     }
     @include sp {
       padding-left: 30px;

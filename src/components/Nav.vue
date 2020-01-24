@@ -60,7 +60,7 @@
   </div>
 </div>
 </template>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 export default {
   name: 'Nav',
