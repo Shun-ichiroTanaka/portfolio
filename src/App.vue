@@ -39,7 +39,7 @@ export default {
           url: "/contact"
         }
       ],
-      backgroundColor: '#17c4c5',
+      // backgroundColor: '#17c4c5',
       color: '#ffffff',
       position: 'top-left',
       isOpenNewTab: false

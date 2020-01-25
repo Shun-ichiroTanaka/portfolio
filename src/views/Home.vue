@@ -3,9 +3,10 @@
     <div class="video-container">
       <h2>Welcome</h2>
       <video id="video" muted src="home/goku.mp4" autoplay webkit-playsinline playsinline loop></video>
-      <div class="overlay"></div>
       <div class="overlay1"></div>
       <div class="overlay2"></div>
+      <div class="dummy1"></div>
+      <div class="dummy2"></div>
       <HomeNav></HomeNav>
     </div>
   </div>
@@ -84,7 +85,7 @@ h2 {
     top: 0;
     left: 0;
     height: 70vh;
-    top: -15vh;
+    top: -16vh;
   }
   @include sp {
       top: -10vh;
@@ -128,5 +129,23 @@ video {
 }
 @include sp {
   .video-container { height: 100vh; }
+}
+.dummy1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6vh;
+  width: 100vw;
+  background: rgb(255, 255, 255);
+  z-index: 1003;
+}
+.dummy2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 5vw;
+  background: rgb(255, 255, 255);
+  z-index: 1003;
 }
 </style>

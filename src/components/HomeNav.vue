@@ -7,7 +7,7 @@
         <div class="icon contact"><a href="/contact"><font-awesome-icon icon="envelope"></font-awesome-icon></a></div>
       </div>
       <div class="navtitle">
-        <h1>S.tanaka</h1>
+        <!-- <h1>S.tanaka</h1> -->
       </div>
     </div>
 </template>
@@ -50,7 +50,8 @@ $media: 767px;
   text-align: center;
   @include pc {
     top: 0;
-    width: 6vw;
+    background: rgb(255, 255, 255);
+    width: 5vw;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
@@ -71,13 +72,15 @@ $media: 767px;
   width: 100%;
   display: flex;
   align-items: center;
-  color: rgb(255, 255, 255);
   @include pc {
+    color: rgb(44, 44, 44);
     justify-content: flex-start;
-    height: 10vh;
+    height: 6vh;
+    background: rgb(255, 255, 255);
     padding-left: 30px;
   }
   @include sp {
+    color: rgb(255, 253, 253);
     justify-content: center;
     height: 10vh;
     line-height: 10vh;
@@ -119,22 +122,34 @@ $media: 767px;
 }
 .home {
   a {
-    color: #ffffff;
+    @include pc {
+      color: #f8b195;
+    }
+    @include sp {}
   }
 }
 .user {
   a {
-    color: #ffffff;
+    @include pc {
+      color: #f67280;
+    }
+    @include sp {}
   }
 }
 .contact {
   a {
-    color:#fff5f8;
+    @include pc {
+      color: #c06c84;
+    }
+    @include sp {}
   }
 }
 .work {
   a {
-    color: #ffffff;
+    @include pc {
+      color: #6c5b7b;
+    }
+    @include sp {}
   }
 }
 </style>
