@@ -7,7 +7,7 @@
         <div class="icon contact"><a href="/contact"><font-awesome-icon icon="envelope"></font-awesome-icon></a></div>
       </div>
       <div class="navtitle">
-        <h1><a href="/">S.tanaka</a></h1>
+        <h1>S.tanaka</h1>
       </div>
     </div>
 </template>
@@ -39,11 +39,12 @@ $media: 767px;
   }
 }
 .nav {
-  position: absolute;
-  box-shadow: 0 1px 3px rgba(160,166,179,.3);  
-  background:  rgb(247, 247, 247) !important;
+  position: fixed;
+  z-index: 1000;
+  // box-shadow: 0 1px 3px rgba(160,166,179,.3);  
   display: flex;
   justify-content: center;
+  vertical-align: middle;
   align-items: center;
   margin: 0 auto;
   text-align: center;
@@ -51,6 +52,8 @@ $media: 767px;
     top: 0;
     width: 6vw;
     height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
     flex-direction: column;
   }
   @include sp {
@@ -63,21 +66,21 @@ $media: 767px;
 }
 .navtitle {
   position: absolute;
+  z-index: 1000;
   font-family: "Kaushan Script", cursive !important;
-  box-shadow: 0 1px 3px rgba(160,166,179,.3);  
-  background:  rgb(247, 247, 247) !important;
   width: 100%;
   display: flex;
   align-items: center;
+  color: rgb(255, 255, 255);
   @include pc {
     justify-content: flex-start;
-    height: 8vh;
+    height: 10vh;
+    padding-left: 30px;
   }
   @include sp {
     justify-content: center;
     height: 10vh;
     line-height: 10vh;
-
   }
 
   a {
@@ -116,22 +119,22 @@ $media: 767px;
 }
 .home {
   a {
-    color: #f8b195;
+    color: #ffffff;
   }
 }
 .user {
   a {
-    color: #f67280;
+    color: #ffffff;
   }
 }
 .contact {
   a {
-    color:#c06c84;
+    color:#fff5f8;
   }
 }
 .work {
   a {
-    color: #6c5b7b;
+    color: #ffffff;
   }
 }
 </style>

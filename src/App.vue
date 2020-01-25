@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 import GoTop from '@inotom/vue-go-top';
+import $ from "jquery";
 window.$ = window.jQuery = require('jquery')
 
 export default {

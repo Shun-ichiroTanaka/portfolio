@@ -1,163 +1,190 @@
 <template lang="html">
-<div class="con-example-images">
-  <Nav></Nav>
-  <HomeParticle></HomeParticle>
-  <div class="work-details">
-    <vs-collapse accordion>
-      <!-- ポートフォリオ -->
-      <vs-collapse-item><br>
-        <div slot="header">ポートフォリオサイト</div>
-        <a href="https://portfolio-b4cc1.firebaseapp.com/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP, Firebase<br><br>
-        VueでSPA構築。WebpackとBabelを導入しgulpでコンパイルという手もあったが、 <br>
-        今回は各ページにSassを書く形にした。<br>
-        当初GithubPageに公開しようと思ったが、vueファイルは公開できなかったためFirebaseを選択した。<br>
-        Firebaseの機能としては、サーバー公開するためのhostingとContactページでのメール送信機能で使用(現在作成途中)したFunctionの二つ。<br>
-        databaseやfirestoreなどは使用していない。従ってほぼフロントエンドの処理で実装できた。<br><br>
-        Vueで書くフロント部分は<br>
-        ・規格によって差異が生じた <br>
-        ・jqueryとVueの使い分け<br>
-        ・スタイル修正にかかる時間<br>
-        ・Vue-routerとJqueryの衝突(page-transitionが結局うまく実装できなかった)<br>
-        など予定よりかなり時間がかかってしまった。 <br><br>
+<div id="gallery">
+  <HomeNav></HomeNav>
+  <section class="gallery">
+    <div class="row">
+      <ul>
+        <a href="#" class="close"></a>
+        <li>
+          <a href="#item01">
+            <img src="/works/work1.jpg" alt="">
+          </a>
+        </li>
 
-        逆によかった点は <br>
-        以前起きた、こまめにgitにあげていなかった事によるデータの消失という失敗を糧に<br>
-        今回は小さな進捗でも即座にcommitしていたため、<br>
-        marge/reset/respaceなど失敗しても対処できる慎重さを身につけられた。
+        <li>
+          <a href="#item02">
+            <img src="/works/work2.jpg" alt="">
+          </a>
+        </li>
 
-      </vs-collapse-item>
-      <!-- ECアプリ -->
-      <vs-collapse-item>
-        <div slot="header">
-          ECアプリ
-        </div>
-        <a href="https://e-commerce-94802.firebaseapp.com/" target="_blank" rel="noopener">アウトプットはこちら</a><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        その他/MAMPFirebase<br>
-        <br>
-        基本的なCRUD処理と決済システムが詰め込まれており練習になるので<br>
-        アウトプットにEC系統を続けて選択
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          ECサイト
-        </div>
-        言語 / PHP, javascript<br>
-        フレームワーク / Laravel, Vue.js<br>
-        データベース / mysql
-        ソースコード管理 / git<br>
-        その他 / MAMP<br>
-        Web開発環境 / MAMP <br><br>
-        バックエンドにLaravelを選択し作成(現在も作成途中)。<br>
-        消費者側の実装は一通り完了したが、売り手側(管理者側)の実装に<br>
-        oyagerというLaravelの管理テンプレートを使用したところ、<br>
-        これが大誤算でテストデータの処理が一元管理できなくなった（エディタと管理者ページ）ため<br>
-        何度も同じ工程を繰り返すハメになった。また、Laravel6.0で作成していたため、<br>
-        実装やエラーに関する参考になる記事が少なかったこともあり管理者ページの作成を止めている。<br>
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          ミュージックアプリ
-        </div>
-        <a href="https://shun-ichirotanaka.github.io/vue_music/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        ソースコード管理 / git<br>
-        その他 / MAMP, GithubPage<br>
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          神経衰弱ゲーム①
-        </div>
-        <a href="https://shun-ichirotanaka.github.io/vue_memorygame2/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP, GithubPage<br>
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          神経衰弱ゲーム②(菅田将暉ver)
-        </div>
-        <a href="https://shun-ichirotanaka.github.io/vue_memorycardgame/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP, GithubPage<br>
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          電卓
-        </div>
-        <a href="https://shun-ichirotanaka.github.io/vue_calculator/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP, GithubPage<br>
-      </vs-collapse-item>
-      <vs-collapse-item>
-        <div slot="header">
-          時計
-        </div>
-        <a href="https://shun-ichirotanaka.github.io/vue_clock/" target="_blank" rel="noopener">アウトプットはこちら</a><br><br>
-        言語 / javascript<br>
-        フレームワーク / Vue.js<br>
-        <!-- データベース / mysql -->
-        ソースコード管理 / git<br>
-        <!-- プロジェクト管理 / backlog -->
-        <!-- 情報共有ツール / slack -->
-        その他 / MAMP, GithubPage<br>
-      </vs-collapse-item>
-    </vs-collapse>
-  </div>
-  <div class="work-box">
-    <vs-images :hover="hover" class="work-gallery">
-      <vs-image :src="`/works/work1.jpg`" />
-      <vs-image :src="`/works/work2.jpg`" />
-      <vs-image :src="`/works/work3.jpg`" />
-      <vs-image :src="`/works/work4.jpg`" />
-      <vs-image :src="`/works/work5.jpg`" />
-      <vs-image :src="`/works/work6.jpg`" />
-      <vs-image :src="`/works/work7.jpg`" />
-      <vs-image :src="`/works/work8.jpg`" />
-      <vs-image :src="`/works/work9.jpg`" />
-      <vs-image :src="`/works/work10.jpg`" />
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rYAZzAK-Akw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </vs-images>
-  </div>
+        <li>
+          <a href="#item03">
+            <img src="/works/work3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item04">
+            <img src="/works/work4.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item05">
+            <img src="/works/work5.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item06">
+            <img src="/works/work6.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item07">
+            <img src="/works/work7.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item08">
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item09">
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="image" href="#item10">
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="item01" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 01</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item02" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 02</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item03" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 03</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item04" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 04</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item05" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 05</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item06" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 06</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <iframe width="560" height="500" src="https://www.youtube.com/embed/rYAZzAK-Akw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+    </div>
+    <div id="item07" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 07</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <iframe width="560" height="500" src="https://www.youtube.com/embed/rYAZzAK-Akw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+    </div>
+    <div id="item08" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 08</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item09" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 09</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+    <div id="item10" class="port">
+        <div class="row">
+            <div class="description">
+                <h1>Item 10</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+        </div> 
+    </div>
+  </section>
 </div>
 </template>
 
 <script>
-import HomeParticle from '@/components/HomeParticle.vue'
-
+import HomeNav from '@/components/HomeNav.vue';
+import $ from "jquery";
 export default {
   name: 'myworks',
   components: {
-    HomeParticle
+    HomeNav
   },
   data: () => ({
     hover: 'curtain'
-  })
+  }),
+  mounted() {
+// portfolio
+  $(".gallery ul li a").click(function() {
+    var itemID = $(this).attr("href");
+    $(".gallery ul").addClass("item_open");
+    $(itemID).addClass("item_open");
+    return false;
+  });
+  $(".close").click(function() {
+    $(".port, .gallery ul").removeClass("item_open");
+    return false;
+  });
+
+  $(".gallery ul li a").click(function() {
+    $("html, body").animate({
+      scrollTop: parseInt($("#top").offset().top)
+      },
+        400
+      );
+    });
+  },
 }
 </script>
 
@@ -175,17 +202,17 @@ $media: 767px;
   }
 }
 
-.con-example-images {
-  padding: 50px 0;
+#gallery {
   margin: 0 auto;
 }
 
-h1 {
-  margin-bottom: 30px;
-}
 
 a {
   color: #7fdbd0;
+}
+
+body {
+  background: rgb(232, 235, 235);
 }
 
 .work-box {
@@ -204,4 +231,168 @@ a {
   font-family: "Noto Sans JP", sans-serif !important;
   text-align: center;
 }
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+.row img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery ul li {
+  float: left;
+  margin: 0 0.8771929825%;
+  overflow: hidden;
+}
+
+.gallery {
+  padding: 40px 0 300px;
+  position: relative;
+  overflow: hidden;
+}
+.gallery ul {
+  padding-top: 50px;
+  position: relative;
+}
+.gallery ul li {
+  margin-bottom: 20px;
+  width: 23.2456140351%;
+  position: relative;
+}
+.gallery ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.gallery ul li a:before {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 40%;
+  left: 50%;
+  margin: -14px 0 0 -16px;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A) no-repeat;
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.gallery ul li a:hover:before {
+  top: 50%;
+  opacity: 1;
+}
+.gallery ul li a:after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.gallery ul li a:hover:after {
+  opacity: 1;
+}
+
+.port {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background-color: #070707;
+  z-index: 1003;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.port img {
+  width: 50%;
+}
+.port .description {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+.port h1 {
+  font-size: 35px;
+  line-height: 2.3;
+  padding: 0;
+}
+.port > * {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.close {
+  width: 21px;
+  height: 21px;
+  background: url('/works/close.svg');
+  position: absolute;
+  right: 10px;
+  top: -121px;
+  opacity: 1;
+  z-index: 1004;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.item_open .close {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 </style>
