@@ -7,7 +7,7 @@
         <div class="icon contact"><a href="/contact"><font-awesome-icon icon="envelope"></font-awesome-icon></a></div>
       </div>
       <div class="navtitle">
-        <!-- <h1>S.tanaka</h1> -->
+        <h1>S.tanaka</h1>
       </div>
     </div>
 </template>
@@ -41,7 +41,6 @@ $media: 767px;
 .nav {
   position: fixed;
   z-index: 1000;
-  // box-shadow: 0 1px 3px rgba(160,166,179,.3);  
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -50,7 +49,6 @@ $media: 767px;
   text-align: center;
   @include pc {
     top: 0;
-    background: rgb(255, 255, 255);
     width: 5vw;
     height: 100%;
     margin-top: auto;
@@ -72,15 +70,13 @@ $media: 767px;
   width: 100%;
   display: flex;
   align-items: center;
+  color: rgb(255, 253, 253);
   @include pc {
-    color: rgb(44, 44, 44);
     justify-content: flex-start;
     height: 6vh;
-    background: rgb(255, 255, 255);
     padding-left: 30px;
   }
   @include sp {
-    color: rgb(255, 253, 253);
     justify-content: center;
     height: 10vh;
     line-height: 10vh;
@@ -122,34 +118,26 @@ $media: 767px;
 }
 .home {
   a {
-    @include pc {
-      color: #f8b195;
-    }
-    @include sp {}
+      // color: #f8b195;
+      color: rgb(255, 253, 253);
   }
 }
 .user {
   a {
-    @include pc {
-      color: #f67280;
-    }
-    @include sp {}
+      // color: #f67280;
+      color: rgb(255, 253, 253);
   }
 }
 .contact {
   a {
-    @include pc {
-      color: #c06c84;
-    }
-    @include sp {}
+      // color: #c06c84;
+      color: rgb(255, 253, 253);
   }
 }
 .work {
   a {
-    @include pc {
-      color: #6c5b7b;
-    }
-    @include sp {}
+      // color: #6c5b7b;
+      color: rgb(255, 253, 253);
   }
 }
 </style>

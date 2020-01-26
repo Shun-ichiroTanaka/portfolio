@@ -2,11 +2,9 @@
   <div class="home">
     <div class="video-container">
       <h2>Welcome</h2>
-      <video id="video" muted src="home/goku.mp4" autoplay webkit-playsinline playsinline loop></video>
+      <video id="video" muted src="home/goku.mp4" autoplay loop></video>
       <div class="overlay1"></div>
       <div class="overlay2"></div>
-      <div class="dummy1"></div>
-      <div class="dummy2"></div>
       <HomeNav></HomeNav>
     </div>
   </div>
@@ -35,12 +33,12 @@ $media: 767px;
     @content;
   }
 }
-
 .video-container {
   position: relative;
   overflow: hidden;
   max-height: 100vh;
 }
+
 h2 {
   white-space: nowrap;
   font-family: "Kaushan Script", cursive !important;
@@ -54,7 +52,7 @@ h2 {
     font-size: 12em;
   }
   @include sp {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
@@ -81,17 +79,10 @@ h2 {
   animation: AnimationName 9s ease infinite;
   z-index: -1;
   width: 100vw;
-  @include pc {
-    top: 0;
-    left: 0;
-    height: 70vh;
-    top: -16vh;
-  }
-  @include sp {
-      top: -10vh;
-      height: 58.5vh;
-      right: 0;
-  }
+  top: 0;
+  left: 0;
+  height: 70%;
+  top: -15%;
 }
 .overlay1 {
   position: absolute;
@@ -101,17 +92,9 @@ h2 {
   animation: AnimationName 9s ease infinite;
   z-index: -1;
   width: 100vw;
-  @include pc {
-    bottom: -35vh;
-    left: 0;
-    height: 70vh;
-
-  }
-  @include sp {
-      bottom: -10vh;
-      height: 58.5vh;
-      right: 0;
-  }
+  top: 0;
+  left: 0;
+  height: 200%;
 }
 video {
   -o-object-fit: cover;
@@ -129,23 +112,5 @@ video {
 }
 @include sp {
   .video-container { height: 100vh; }
-}
-.dummy1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 6vh;
-  width: 100vw;
-  background: rgb(255, 255, 255);
-  z-index: 1003;
-}
-.dummy2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 5vw;
-  background: rgb(255, 255, 255);
-  z-index: 1003;
 }
 </style>
