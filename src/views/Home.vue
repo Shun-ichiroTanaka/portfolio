@@ -2,7 +2,9 @@
   <div class="home">
     <div class="video-container">
       <h2>Welcome</h2>
-      <video id="video" muted src="home/goku.mp4" autoplay loop></video>
+      <video id="video" preload="auto" autoplay loop muted playsinline>
+        <source src="home/goku.mp4" type="video/mp4" />
+      </video>
       <div class="overlay1"></div>
       <div class="overlay2"></div>
       <HomeNav></HomeNav>
@@ -36,7 +38,7 @@ $media: 767px;
 .video-container {
   position: relative;
   overflow: hidden;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 h2 {

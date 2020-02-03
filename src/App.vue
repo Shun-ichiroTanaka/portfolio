@@ -15,6 +15,15 @@ import GoTop from '@inotom/vue-go-top';
 import $ from "jquery";
 window.$ = window.jQuery = require('jquery')
 
+new fullpage('#app', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+//methods
+fullpage_api.setAllowScrolling(false);
+
 export default {
   components: {
     GoTop,
