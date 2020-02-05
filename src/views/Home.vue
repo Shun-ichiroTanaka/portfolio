@@ -5,19 +5,16 @@
       <video id="video" preload="auto" autoplay loop muted playsinline>
         <source src="home/goku.mp4" type="video/mp4" />
       </video>
-      <div class="overlay1"></div>
-      <div class="overlay2"></div>
-      <HomeNav></HomeNav>
     </div>
   </div>
 </template>
 
 <script>
-import HomeNav from '@/components/HomeNav.vue'
+// import HomeNav from '@/components/HomeNav.vue'
 export default {
   name: 'home',
   components: {
-    HomeNav
+    // HomeNav
   }
 }
 </script>

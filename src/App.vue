@@ -1,32 +1,16 @@
 <template>
 <div id="app">
-  <vue-scroll-progress-bar @complete="handleCoplete" height="0.25rem" backgroundColor='linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)' zIndex="10000" />
-  <go-top bg-color="#2C3E50" :radius="0" alt="TOP"></go-top>
-  <vue-page-transition name="overlay-up-down">
-    <transition>
-      <router-view />
-    </transition>
-  </vue-page-transition>
+  <!-- <Nav></!-->
+  <router-view />
 </div>
 </template>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-import GoTop from '@inotom/vue-go-top';
-import $ from "jquery";
-window.$ = window.jQuery = require('jquery')
-
-new fullpage('#app', {
-	//options here
-	autoScrolling:true,
-	scrollHorizontally: true
-});
-
-//methods
-fullpage_api.setAllowScrolling(false);
+// // import Nav from '@/components/Nav.vue'
 
 export default {
   components: {
-    GoTop,
+    // Nav
   },
   data() {
     return {
@@ -74,8 +58,9 @@ export default {
     }
   },
   mounted: function () {
-    $(document).ready(function () {});
+    $(document).ready(function () {
 
+    });
   }
 
 }
@@ -152,7 +137,6 @@ p {
 
 #app {
   color: #2c3e50;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -218,11 +202,6 @@ p {
 
 // =============================== vue-transition
 @include pc {
-  .section1 {
-    & img {
-      max-width: 450px;
-    }
-  }
 };
 @include sp {
 };

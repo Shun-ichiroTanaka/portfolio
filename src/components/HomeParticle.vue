@@ -4,9 +4,7 @@
     <div id="particles-js">
       <span id="time">{{ $moment().format('YYYY/MM/DD HH:mm')}}</span>
       <div id="author-name">
-        <vue-typer :text='[
-                  "©︎All Rights are reserved by Tana -2019",
-                ]' initial-action='typing' :pre-type-delay='300' :type-delay='300' :pre-erase-delay='1500' :erase-delay='100' erase-style='backspace' :erase-on-complete='true' caret-animation='smooth'></vue-typer>
+        ©︎All Rights are reserved by Tana 2019~
       </div>
       <div id="main" class="has-text-centered">
         <h1>Welcome to Myworks</h1>
@@ -44,7 +42,7 @@ export default {
           },
           "color": {
             "value": [
-              "#2deda7",
+              "#fff",
             ]
           },
           "shape": {
@@ -79,14 +77,14 @@ export default {
           },
           "line_linked": {
             "enable": true,
-            "distance": 1000,
+            "distance": 800,
             "color": "#2deda7",
             "opacity": 1,
             "width": .3
           },
           "move": {
             "enable": true,
-            "speed": 2,
+            "speed": 1,
             "direction": "none",
             "random": true,
             "straight": false,
@@ -160,6 +158,9 @@ $media: 767px;
     @content;
   }
 }
+body {
+  background: #17181B;
+}
 
 html,
 body,
@@ -171,6 +172,10 @@ body,
   padding: 0;
   margin: 0;
   font-family: "Kaushan Script", cursive !important;
+  color: #fff !important;
+  h4 {
+    color: #000 !important;
+  }
 }
 #main {
   position: absolute;
@@ -181,6 +186,7 @@ body,
 
 h1 {
   font-size: 4em;
+  color: #fff;
 }
 
 #particles-js {
@@ -191,12 +197,16 @@ h1 {
 #vue-typer {
   display: inline-block;
   margin-top: 20px;
-  color: #2c3e50 !important;
+  color: #fff !important;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
   font-size: .5em;
   white-space: nowrap !important;
+  .custom.char.typed {
+    word-break: break-all !important;
+    color: #fff !important;
+    overflow-wrap: break-word !important;
+  }
 }
-
 #time {
   display: none;
 }
@@ -205,7 +215,7 @@ h1 {
   display: none;
 }
 
-@media screen and (min-width: 1080px) {
+@include pc {
   #main {
     top: 50vh;
   }
@@ -213,22 +223,14 @@ h1 {
   h1 {
     font-size: 5em;
     white-space: nowrap;
+    color: #fff;
   }
 
   h2 {
     font-size: 3em;
+    color: #fff;
   }
 
-  #vue-typer {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
-    font-size: .5em;
-
-    .custom.char.typed {
-      word-break: break-all !important;
-
-      overflow-wrap: break-word !important;
-    }
-  }
 
   #time {
     position: absolute;
@@ -236,7 +238,8 @@ h1 {
     right: -50px;
     display: block;
     word-spacing: 10px;
-    border-bottom: 2px solid #2c3e4f;
+    color: #fff;
+    border-bottom: 2px solid #fff;
             transform: rotate3d(0, 0, 1, -90deg);
 
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
@@ -249,8 +252,9 @@ h1 {
     bottom: 10px;
     left: 50%;
     display: block;
+    color: #fff;
     word-spacing: 10px;
-    border-bottom: 2px solid #2c3e4f;
+    border-bottom: 2px solid #fff;
     transform: translateY(-50%) translateX(-50%);
   }
 }

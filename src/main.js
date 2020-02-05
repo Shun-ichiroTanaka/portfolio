@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 
 // ==================================================== component読込
 Vue.component('Nav', require('./components/Nav.vue').default);
-Vue.component('SkillChart', require('./components/Chart.vue').default);
+// Vue.component('Calculator', require('./components/works/Calculator.vue').default);
 
 
 

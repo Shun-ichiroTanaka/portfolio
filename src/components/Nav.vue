@@ -34,14 +34,14 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="col">
+          <div class="col">
             <h4>Contact</h4>
             <ul>
               <li>
                 <a href="/contact"><img src="/home/contact.svg" alt="" width="200"></a>
               </li>
             </ul>
-          </div> -->
+          </div>
           <ul class="social">
             <li><a href="https://github.com/Shun-ichiroTanaka/" target="_blank" rel="noopener">
                 <svg class="main__svg" viewBox="0 0 496 512">
@@ -229,7 +229,7 @@ header {
   position: relative;
   width: 30px;
   height: 2px;
-  background-color: rgb(88, 88, 88);
+  background-color:#fff;
   border-radius: 4px;
   transition-duration: .15s;
   transition-property: -webkit-transform;
@@ -296,7 +296,7 @@ header {
 }
 
 #masthead.is-active .hamburger-label {
-  color: #000;
+  color: #17181B;
 }
 
 .hamburger-box,

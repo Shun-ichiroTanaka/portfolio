@@ -1,59 +1,226 @@
 <template>
 <div id="app">
   <Nav></Nav>
-  <vs-row vs-w="12">
-    <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="12" vs-sm="12" vs-xs="12">
-      <div class="tabs">
-        <input id="all" type="radio" name="tab_item" checked>
-        <label class="tab_item" for="all">Profile</label>
-        <input id="programming" type="radio" name="tab_item">
-        <label class="tab_item" for="programming">Skills</label>
-
-        <div class="tab_content" id="Profile">
-          <vs-row vs-w="12">
-            <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="5" vs-sm="5" vs-xs="12">
-              <img src="/about/about-top.svg" class="profile-img">
-            </vs-col>
-            <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-lg="7" vs-sm="7" vs-xs="12">
-              <div>
-                <h2>TANA</h2><br>
-                <p>Birth : 1996/8/9</p>
-                <p>香川生まれ東京育ち</p><br>
-
-                <h3>Favorite</h3><br>
-                <p>スポーツ全般 / 特に野球とサッカー</p>
-              </div>
-            </vs-col>
-          </vs-row><br><br>
-          <h3>PAST</h3><br>
-          <p>女性メディア会社でYoutube事業の映像編集をしたりWeb制作会社にてコーダーとして働いていました。プログラミングが好きで
-            エンジニアとしてレベルアップを図るためバックエンドの勉強を始めました(PHP,Javascriptなど)。フロント側の力を伸ばしつつバックエンドも対応できる人材を目指しています。</p><br>
-          <p>お手数ですが、ご連絡はTwitterのDMまでお願いします。</p><br>
-          <div class="main__social">
-            <a href="https://twitter.com/tana_fe" class="main__link" target="_blank" rel="noopener">
-              <svg class="main__svg" viewBox="0 0 512 512">
-                <title>Follow me on Twitter</title>
-                <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-              </svg>
-            </a>
-            <a href="https://github.com/Shun-ichiroTanaka/" class="main__link" target="_blank" rel="noopener">
-              <svg class="main__svg" viewBox="0 0 496 512">
-                <title>Follow me on Github</title>
-                <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg>
-            </a>
+  <!-- Header Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header id="header">
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#skills">Services</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Work</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="title">
+      <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+      <div class="smallsep heading"></div>
+      <h1 class="heading"> Clean & Simple</h1>
+      <h2 class="heading">Lorem ipsum dolor sit amet</h2>
+      <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      </a> </div>
+    <a class="smoothscroll" href="#about">
+    <div class="scroll-down"></div>
+    </a> </header>
+    
+  <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>About</h1>
+        <div class="block"></div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3><span class="typcn typcn-device-desktop icon"></span>Our Process</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <div class="six columns">
+          <h3><span class="typcn typcn-pen icon"></span>Our Approach</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        <div class="row">
+          <div class="six columns">
+            <h3><span class="typcn typcn-cog-outline icon"></span>Our Goal</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div class="six columns">
+            <h3><span class="typcn typcn-lightbulb icon"></span>Our Mission</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>
         </div>
-        <div class="tab_content" id="programming_content">
-          <chart></chart>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <h1>Meet the Team</h1>
+        <div class="block"></div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="row">
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Naruto Uzumaki</h4>
+          <p>Creative Director</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Sasuke Uchiha</h4>
+          <p>Lead Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Shikamaru Nara</h4>
+          <p>Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Sakura Haruno</h4>
+          <p>Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="skills">
+    <div class="container">
+      <h1>Services</h1>
+      <div class="block"></div>
+      <div class="row">
+        <div class="one-third column">
+          <h3>Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+        <div class="one-third column">
+          <h3>Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+        <div class="one-third column">
+          <h3>Marketing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
         </div>
       </div>
-    </vs-col>
-  </vs-row>
+      <div class="row">
+        <div class="eight columns">
+          <div class="progressBar">
+            <h4>HTML5</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-90"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>CSS3</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-80"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Jquery</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-30"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>WordPress</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-70"></div>
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem. Enim soluta consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="portfolio">
+    <div class="container">
+      <h1>Work</h1>
+      <div class="block"></div>
+      <div class="row">
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work One"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Two"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Three"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Four"/></div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Five"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Six"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Seven"/></div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <section id="testimonial">
+    <div class="container">
+      <div class="quoteLoop">
+        <blockquote class="quote"> <img src="http://placehold.it/100x100" width="100" height="100" alt=""/>
+          <h5>&nbsp;<br>
+            &rdquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;<br>
+            <small>Steve Bruce, Sed ut perspiciatis unde omnis</small></h5>
+        </blockquote>
+        <blockquote class="quote"> <img src="http://placehold.it/100x100" width="100" height="100" alt=""/>
+          <h5>&nbsp;<br>
+            &ldquo;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.&rdquo;<br>
+            <small>Tom Jones, Sed ut perspiciatis unde omnis</small></h5>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <section id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="block"></div>
+      <form>
+        <div class="row">
+          <div class="six columns">
+            <label for="exampleRecipientInput">Name</label>
+            <input class="u-full-width" type="text">
+          </div>
+          <div class="six columns">
+            <label for="exampleEmailInput">Email</label>
+            <input class="u-full-width" type="email">
+          </div>
+        </div>
+        <div class="row">
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width"></textarea>
+          <input class="button-primary" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
 
 </div>
 </template>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script>
 import Chart from '@/components/Chart.vue';
 
@@ -63,108 +230,775 @@ export default {
   },
   mounted: function () {
     $(document).ready(function () {
+    /*----------------------------------------------------*/
+    /* Quote Loop
+    ------------------------------------------------------ */
 
+    function fade($ele) {
+        $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
+            var $next = $(this).next('.quote');
+            fade($next.length > 0 ? $next : $(this).parent().children().first());
+      });
+    }
+    fade($('.quoteLoop > .quote').first());
+
+
+    /*----------------------------------------------------*/
+    /* Navigation
+    ------------------------------------------------------ */
+
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 300) {
+            $('.main_nav').addClass('sticky');
+        } else {
+            $('.main_nav').removeClass('sticky');
+        }
     });
 
-  }
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_nav').hasClass('open-nav')) {
+            $('.main_nav').removeClass('open-nav');
+        } else {
+            $('.main_nav').addClass('open-nav');
+        }
+    });
 
-}
+    $('.main_nav li a').click(function() {
+        if ($('.main_nav').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_nav').removeClass('open-nav');
+        }
+    });
+
+
+    /*----------------------------------------------------*/
+    /* Smooth Scrolling
+    ------------------------------------------------------ */
+
+    jQuery(document).ready(function($) {
+
+        $('.smoothscroll').on('click',function (e) {
+          e.preventDefault();
+
+          var target = this.hash,
+          $target = $(target);
+
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 800, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
+      
+    });
+
+
+    TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+        });
+
+      }
+
+    }
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script&display=swap");
-h1, h2 {
-  font-family: "Kaushan Script", cursive !important;
-  font-size: 3em;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+
+/* Base Styles
+********************************************************************* */
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #222;
+}
+/* Grid
+********************************************************************* */  
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.column, .columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
 }
 
-.section1 {
-  display: block;
-  padding-top: 100px;
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+.container {
+	width: 85%;
+	padding: 0;
+}
 }
 
-.profile-img {
-  width: 400px;
-  max-width: 90vw;
-  border-radius: 50%;
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+.container {
+	width: 80%;
+}
+.column,  .columns {
+	margin-left: 4%;
+}
+.column:first-child,  .columns:first-child {
+	margin-left: 0;
+}
+.one.column,  .one.columns {
+	width: 4.66666666667%;
+}
+.two.columns {
+	width: 13.3333333333%;
+}
+.three.columns {
+	width: 22%;
+}
+.four.columns {
+	width: 30.6666666667%;
+}
+.five.columns {
+	width: 39.3333333333%;
+}
+.six.columns {
+	width: 48%;
+}
+.seven.columns {
+	width: 56.6666666667%;
+}
+.eight.columns {
+	width: 65.3333333333%;
+}
+.nine.columns {
+	width: 74.0%;
+}
+.ten.columns {
+	width: 82.6666666667%;
+}
+.eleven.columns {
+	width: 91.3333333333%;
+}
+.twelve.columns {
+	width: 100%;
+	margin-left: 0;
+}
+.one-third.column {
+	width: 30.6666666667%;
+}
+.two-thirds.column {
+	width: 65.3333333333%;
+}
+.one-half.column {
+	width: 48%;
+}
+/* Offsets */
+.offset-by-one.column,  .offset-by-one.columns {
+	margin-left: 8.66666666667%;
+}
+.offset-by-two.column,  .offset-by-two.columns {
+	margin-left: 17.3333333333%;
+}
+.offset-by-three.column,  .offset-by-three.columns {
+	margin-left: 26%;
+}
+.offset-by-four.column,  .offset-by-four.columns {
+	margin-left: 34.6666666667%;
+}
+.offset-by-five.column,  .offset-by-five.columns {
+	margin-left: 43.3333333333%;
+}
+.offset-by-six.column,  .offset-by-six.columns {
+	margin-left: 52%;
+}
+.offset-by-seven.column,  .offset-by-seven.columns {
+	margin-left: 60.6666666667%;
+}
+.offset-by-eight.column,  .offset-by-eight.columns {
+	margin-left: 69.3333333333%;
+}
+.offset-by-nine.column,  .offset-by-nine.columns {
+	margin-left: 78.0%;
+}
+.offset-by-ten.column,  .offset-by-ten.columns {
+	margin-left: 86.6666666667%;
+}
+.offset-by-eleven.column,  .offset-by-eleven.columns {
+	margin-left: 95.3333333333%;
+}
+.offset-by-one-third.column,  .offset-by-one-third.columns {
+	margin-left: 34.6666666667%;
+}
+.offset-by-two-thirds.column,  .offset-by-two-thirds.columns {
+	margin-left: 69.3333333333%;
+}
+.offset-by-one-half.column,  .offset-by-one-half.columns {
+	margin-left: 52%;
+}
+}
+/* Typography
+********************************************************************* */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-weight: 300;
+}
+h1 {
+	font-size: 4.0rem;
+	line-height: 1.2;
+	letter-spacing: -.1rem;
+}
+h2 {
+	font-size: 3.6rem;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+}
+h3 {
+	font-size: 3.0rem;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
+}
+h4 {
+	font-size: 2.4rem;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+}
+h5 {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	letter-spacing: -.05rem;
+}
+h6 {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	letter-spacing: 0;
 }
 
-#app {
-  position: relative;
-  z-index: 0;
-  margin: 0 auto;
+/* Larger than phablet */
+@media (min-width: 550px) {
+h1 {
+	font-size: 5.0rem;
+}
+h2 {
+	font-size: 4.2rem;
+}
+h3 {
+	font-size: 3.6rem;
+}
+h4 {
+	font-size: 3.0rem;
+}
+h5 {
+	font-size: 2.4rem;
+}
+h6 {
+	font-size: 1.5rem;
+}
+}
+p {
+	margin-top: 0;
+}
+/* Links
+********************************************************************* */
+a {
+	color: #1EAEDB;
+}
+a:hover {
+	color: #0FA0CE;
+}
+/* Header Section
+********************************************************************* */
+
+
+header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+ width: 100%;
+	height: 100vh;
+	background: #e55d87;
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+}
+.title {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	padding: 2rem;
+	max-width: 960px;
+	text-align: center;
+}
+.title .smallsep {
+	background: #fff;
+	height: 2px;
+	width: 70px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.title h1 {
+	font-size: 80px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 0.85;
+	margin-bottom: 28px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+.title h2 {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
 }
 
-/*タブ切り替え全体のスタイル*/
-.tabs {
-  width: 100%;
-  min-height: 600px;
-  padding-bottom: 40px;
-  margin: 0 auto 100px auto;
-  margin-top: 50px;
-  background-color: #fff;
-  // box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+@media only screen and (max-height: 700px) {
+.title h1 {
+	font-size: 80px;
+}
+}
+.title p {
+	max-width: 600px;
+	margin: 0 auto;
+	line-height: 150%;
 }
 
-/*タブのスタイル*/
-.tab_item {
-  float: left;
-  display: block;
-  width: calc(100%/2);
-  height: 50px;
-  color: #2c3e50;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 50px;
-  text-align: center;
-  text-align: center;
-  border-bottom: 3px solid #7fdbd0;
-  transition: all .2s ease;
-  cursor: pointer;
+@media only screen and (max-width: 500px) {
+.title h1 {
+	font-size: 65px;
+}
+}
+.title .icon {
+	color: #FFFFFF;
+	font-size: 50px;
+}
+.main_nav {
+	position: fixed;
+	top: 0px;
+	max-height: 50px;
+	z-index: 999;
+	width: 100%;
+	padding-top: 10px;
+	background: none;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0;
+	top: -100px;
+	padding-bottom: 6px;
 }
 
-.tab_item:hover {
-  background-color: #d9d9d9;
-  transition: all .7s ease;
-  opacity: .75;
+@media only screen and (max-width: 766px) {
+.main_nav {
+	padding-top: 25px;
+}
+}
+.open-nav {
+	max-height: 400px !important;
+}
+.sticky {
+	background-color: #ffffff;
+	opacity: 1;
+	top: 0px;
+}
+nav {
+	width: 100%;
+	margin-top: 5px;
 }
 
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-  display: none;
+@media only screen and (max-width: 766px) {
+nav {
+	width: 100%;
+}
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
 }
 
-/*タブ切り替えの中身のスタイル*/
-.tab_content {
-  clear: both;
-  display: none;
-  overflow: hidden;
-  padding: 40px 40px 0;
+@media only screen and (max-width: 766px) {
+nav ul {
+	padding-top: 0px;
+	margin-bottom: 22px;
+	text-align: center;
+	width: 100%;
+}
+}
+nav ul li {
+	display: inline-block;
+	margin-left: 35px;
+	line-height: 1.5;
+	letter-spacing: 1px;
 }
 
-/*選択されているタブのコンテンツのみを表示*/
-#all:checked ~ #Profile,
-#programming:checked ~ #programming_content,
-#design:checked ~ #design_content {
-  display: block;
+@media only screen and (max-width: 766px) {
+nav ul li {
+	width: 100%;
+	padding: 7px 0;
+	margin: 0;
+}
+nav ul li:first-child {
+	margin-top: 70px;
+}
+}
+nav ul a {
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+}
+nav ul a:hover {
+	color: #CFCFCF;
+}
+.mobile-toggle {
+	display: none;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	right: 22px;
+	top: 0;
+	width: 30px;
 }
 
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item {
-  color: #fff;
-  background: #7fdbd0;
+@media only screen and (max-width: 766px) {
+.mobile-toggle {
+	display: block;
+}
+}
+.mobile-toggle span {
+	width: 30px;
+	height: 4px;
+	margin-bottom: 6px;
+	background: #000000;
+	display: block;
+}
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 5vh;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+	width: 13px;
+	height: 13px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 9;
+	-webkit-transform: translate(-50%, 0%) rotate(45deg);
+	-moz-transform: translate(-50%, 0%) rotate(45deg);
+	transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation: fade_move_down 2s ease-in-out infinite;
+	animation: fade_move_down 2s ease-in-out infinite;
 }
 
-@media screen and (min-width: 1080px) {
-  .tabs {
-    width: 70vw;
-  }
 
-  h1 {
-    font-size: 5em;
-  }
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+ 0% {
+-webkit-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-webkit-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@-moz-keyframes fade_move_down {
+ 0% {
+-moz-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-moz-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@keyframes fade_move_down {
+ 0% {
+transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+/* About Section
+********************************************************************* */
+
+#about {
+	padding: 100px 0 50px 0;
+}
+/* Team Section
+********************************************************************* */
+#team {
+	padding: 50px 0 100px 0;
+}
+#team .icon {
+	font-size: 26px;
+}
+/* Skills Section
+********************************************************************* */
+#skills {
+	padding: 100px 0 100px 0;
+	background-color: #F5F5F5;
+}
+.progressBar {
+	margin-bottom: 26px;
+	margin-bottom: 1.66em;
+}
+.progressBar h4 {
+	font-size: 16px;
+	text-transform: none;
+	margin-bottom: 7px;
+	margin-bottom: .33em;
+}
+.progressBarContainer {
+	width: 100%;
+	height: 8px;
+	background: #E1E1E1;
+	overflow: hidden;
+}
+.progressBarValue {
+	height: 8px;
+	float: left;
+	background: #e55d87; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+}
+.value-00 {
+	width: 0;
+}
+.value-10 {
+	width: 10%;
+}
+.value-20 {
+	width: 20%;
+}
+.value-30 {
+	width: 30%;
+}
+.value-40 {
+	width: 40%;
+}
+.value-50 {
+	width: 50%;
+}
+.value-60 {
+	width: 60%;
+}
+.value-70 {
+	width: 70%;
+}
+.value-80 {
+	width: 80%;
+}
+.value-90 {
+	width: 90%;
+}
+.value-100 {
+	width: 100%;
+}
+/* Portfolio Section
+********************************************************************* */
+#portfolio {
+	padding: 100px 0 100px 0;
+}
+.image {
+	background-color: #5a5a5a;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	transition: .5s;
+}
+.image:hover {
+	opacity: 0.6;
+	transition: .3s;
+	// background-image: url(../images/hoverbg.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-@media screen and (min-width: 768px) {
+/* Testimonial Section
+********************************************************************* */
+#testimonial {
+	background-color: #F5F5F5;
+	padding: 100px 0 100px 0;
 }
+.quoteLoop {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.quote {
+	margin: 10px 30px;
+	height: inherit;
+	top: 0px;
+	display: none;
+	text-align: center;
+}
+/* Contact Section
+********************************************************************* */
+#contact {
+	padding: 100px 0 100px 0;
+}
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+	height: 38px;
+	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+	background-color: #F5F5F5;
+	border: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	border-radius: 0;
+	outline: none;
+}
+textarea {
+	min-height: 250px;
+}
+input[type="submit"] {
+	display: inline-block;
+	height: 38px;
+	padding: 0 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background: #5fc3e4;
+	border-radius: 0px;
+	border: 0;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+input[type="submit"]:hover {
+	background: #e55d87;
+	text-decoration: none;
+}
+/* Footer Section
+********************************************************************* */
+footer {
+	min-height: 120px;
+	padding: 40px 0 40px 0;
+	background: #e55d87;
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+	box-sizing: border-box;
+}
+footer p {
+	color: #FFFFFF;
+	margin: 20px 0 0 0;
+}
+.socialIcons {
+	font-size: 34px;
+	color: rgba(255, 255, 255, 0.7);
+}
+/* Lists
+********************************************************************* */
+ul {
+	list-style: circle inside;
+}
+ol {
+	list-style: decimal inside;
+}
+ol, ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin: 1.5rem 0 1.5rem 3rem;
+	font-size: 90%;
+}
+li {
+	margin-bottom: 1rem;
+}
+/* Spacing
+********************************************************************* */
+button, .button {
+	margin-bottom: 1rem;
+}
+input, textarea, select, fieldset {
+	margin-bottom: 1.5rem;
+}
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+	margin-bottom: 2.5rem;
+}
+/* Utilities
+********************************************************************* */
+.u-full-width {
+	width: 100%;
+	box-sizing: border-box;
+}
+.u-max-full-width {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.u-pull-right {
+	float: right;
+}
+.u-pull-left {
+	float: left;
+}
+/* Clearing
+********************************************************************* */
+.container:after, .row:after, .u-cf {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Misc
+********************************************************************* */
+
+.icon {
+	padding-right: 10px;
+	color: #e55d87;
+}
+.block {
+	width: 70px;
+	height: 2px;
+	background: #e55d87; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	margin-bottom: 50px;
+}
+
 </style>

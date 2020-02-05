@@ -1,6 +1,6 @@
 <template lang="html">
 <div id="gallery">
-  <HomeNav></HomeNav>
+  <Nav></Nav>
   <section class="gallery">
     <div class="row">
       <ul>
@@ -154,12 +154,12 @@
 </template>
 
 <script>
-import HomeNav from '@/components/HomeNav.vue';
+import Nav from '@/components/Nav.vue';
 import $ from "jquery";
 export default {
   name: 'myworks',
   components: {
-    HomeNav
+    Nav
   },
   data: () => ({
     hover: 'curtain'
@@ -203,7 +203,8 @@ $media: 767px;
 }
 
 #gallery {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -211,9 +212,7 @@ a {
   color: #7fdbd0;
 }
 
-body {
-  background: rgb(232, 235, 235);
-}
+
 
 .work-box {
   width: 100%;
@@ -257,7 +256,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .gallery ul li {
   float: left;
   margin: 0 0.8771929825%;
