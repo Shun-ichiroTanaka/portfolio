@@ -222,11 +222,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script>
-import Chart from '@/components/Chart.vue';
+import Nav from '@/components/Nav.vue';
 
 export default {
   components: {
-    Chart,
+    Nav,
   },
   mounted: function () {
     $(document).ready(function () {
@@ -296,11 +296,10 @@ export default {
 
 
     TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
-        });
+    });
 
-      }
-
-    }
+  }
+}
 </script>
 
 <style lang="scss">

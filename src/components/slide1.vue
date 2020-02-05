@@ -16,7 +16,23 @@
       <header class="slide__header">
         <h2 class="slide__title">
           <span class="title-line"><span>Welcome to</span></span>
-          <span class="title-line"><span>My Portfolio</span></span>
+          <span class="title-line">
+            <span>
+              <vue-typer :text='["My Portfolio",]'
+                :repeat='Infinity'
+                :shuffle='false'
+                initial-action='typing'
+                :pre-type-delay='2000'
+                :type-delay='100'
+                :pre-erase-delay='2000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                id="vue-typer">
+              </vue-typer>
+            </span>
+          </span>
         </h2>
       </header>
     </div>
@@ -28,7 +44,23 @@
       <header class="slide__header">
         <h2 class="slide__title">
           <span class="title-line"><span>I'm Tana,</span></span>
-          <span class="title-line"><span>Front-end engineer</span></span>
+          <span class="title-line">
+            <span>
+              <vue-typer :text='["Front-end engineer",]'
+                :repeat='Infinity'
+                :shuffle='false'
+                initial-action='typing'
+                :pre-type-delay='2000'
+                :type-delay='100'
+                :pre-erase-delay='2000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                id="vue-typer">
+              </vue-typer>
+            </span>
+          </span>
         </h2>
       </header>
     </div>
@@ -39,8 +71,24 @@
       <figure class="slide__figure"><div class="slide__img" style="background-image: url(/home/slider3.jpg)"></div></figure>
       <header class="slide__header">
         <h2 class="slide__title">
-          <span class="title-line"><span>most i use </span></span>
-          <span class="title-line"><span>laravel and vue.js </span></span>
+          <span class="title-line"><span>most i love is </span></span>
+          <span class="title-line">
+            <span>
+              <vue-typer :text='["php and js",]'
+                :repeat='Infinity'
+                :shuffle='false'
+                initial-action='typing'
+                :pre-type-delay='2000'
+                :type-delay='100'
+                :pre-erase-delay='2000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                id="vue-typer">
+              </vue-typer>
+            </span>
+          </span>
         </h2>
       </header>
     </div>
@@ -52,7 +100,23 @@
       <header class="slide__header">
         <h2 class="slide__title">
           <span class="title-line"><span>there is a will,</span></span>
-          <span class="title-line"><span>there is a way.</span></span>
+          <span class="title-line">
+            <span>
+              <vue-typer :text='["there is a way.",]'
+                :repeat='Infinity'
+                :shuffle='false'
+                initial-action='typing'
+                :pre-type-delay='2000'
+                :type-delay='100'
+                :pre-erase-delay='2000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                id="vue-typer">
+              </vue-typer>
+            </span>
+          </span>
         </h2>
       </header>
     </div>
@@ -216,6 +280,16 @@ $media: 767px;
     @content;
   }
 }
+#vue-typer {
+  display: inline-block;
+  color: transparent;
+  white-space: nowrap !important;
+  .custom.char.typed {
+    color: #101010 !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+  }
+}
 // fonts
 $font-header: Montserrat, helvetica;
 $font-nav : "Space Mono", monospace;
@@ -291,12 +365,13 @@ body{
     display:inline-block;
     padding: 0.35em;
     margin: 0;
-    font-family: $font-nav;
+    font-family: $font-title;
     appearance: none;
     background:transparent;
     border: 0;
     overflow-x:hidden;
     transition: color 0.5s ease;
+    font-size: 1.2rem;
     
     &:after{
       content:'';

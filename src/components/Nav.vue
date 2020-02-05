@@ -84,6 +84,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+$font-title: 'Julius Sans One', sans-serif;
+
 *,
 *:before,
 *:after {
@@ -106,7 +109,7 @@ body {
   max-width: 100vw !important;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif !important;
+  font-family: $font-title;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -139,7 +142,7 @@ header {
   top: 0 !important;
   left: 0;
   width: 100vw;
-  font-family: "Roboto", sans-serif !important;
+  font-family: $font-title;
 }
 
 // /*
@@ -229,7 +232,7 @@ header {
   position: relative;
   width: 30px;
   height: 2px;
-  background-color:#fff;
+  background-color:rgb(46, 46, 46);
   border-radius: 4px;
   transition-duration: .15s;
   transition-property: -webkit-transform;
@@ -311,7 +314,7 @@ header {
   flex-direction: column;
   overflow: hidden;
   height: 0;
-  padding-top: 2.5em;
+  padding-top: 2em;
 }
 
 #site-nav.is-active {
@@ -328,7 +331,7 @@ header {
     width: 1.2rem;
     height: 1.2rem;
     margin: 0 10px;
-    color: rgb(80, 202, 162);
+    color: rgb(82, 82, 82);
     opacity: .6;
 
     &:hover {
@@ -359,7 +362,7 @@ header {
 @media screen and (min-width: 960px) {
   #masthead {
     position: relative;
-    padding: 2.5em;
+    padding: 1em;
   }
 
   #site-nav {
