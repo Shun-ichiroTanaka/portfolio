@@ -28,6 +28,7 @@
           </div>
           <!-- sns -->
           <sns></sns>
+          <a href="https://qiita.com/Shun-ichiro" target="_blank" rel="noopener">Qiita</a>
         </nav>
       </div>
     </header>
@@ -303,7 +304,15 @@ header {
 #site-nav .col {
   padding: 1.5em;
 }
-
+#site-nav a {
+  text-decoration:none;
+  font-size:1.5rem;
+  font-weight:700;
+  color: #8DCBC1;
+  @include sp {
+    padding-bottom: 20px;
+  }
+}
 .main {
   &__svg {
     width: 1.2rem;
