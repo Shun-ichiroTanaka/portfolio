@@ -18,7 +18,7 @@
           <span class="title-line"><span>Welcome to</span></span>
           <span class="title-line">
             <span>
-              <vue-typer :text='["My Portfolio",]'
+              <vue-typer :text='["My Portfolio.",]'
                 :repeat='Infinity'
                 :shuffle='false'
                 initial-action='typing'
@@ -46,7 +46,7 @@
           <span class="title-line"><span>I'm Tana,</span></span>
           <span class="title-line">
             <span>
-              <vue-typer :text='["Front-end engineer",]'
+              <vue-typer :text='["Front-end engineer.",]'
                 :repeat='Infinity'
                 :shuffle='false'
                 initial-action='typing'
@@ -74,7 +74,7 @@
           <span class="title-line"><span>most i love is </span></span>
           <span class="title-line">
             <span>
-              <vue-typer :text='["php and js",]'
+              <vue-typer :text='["php and js.",]'
                 :repeat='Infinity'
                 :shuffle='false'
                 initial-action='typing'
@@ -128,7 +128,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="https://fonts.googleapis.com/css?family=Montserrat:700|Space+Mono"></script>
 <script>
-
 export default {
   name: 'Slide',
   mounted: function() {
