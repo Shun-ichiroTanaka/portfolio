@@ -46,78 +46,165 @@
               <img src="/works/work8.jpg" alt="">
             </a>
           </li>
+          <li>
+            <a class="image" href="#item09">
+              <img src="/works/work9.jpg" alt="">
+            </a>
+          </li>
         </ul>
       </div>
       <div id="item01" class="port">
           <div class="row">
-              <div class="description">
-                  <h1>ポートフォリオサイト</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-              </div>
               <img src="/works/work1.jpg" alt="">
+              <div class="description">
+                <h1>ポートフォリオサイト</h1>
+                <a href="https://portfolio-b4cc1.firebaseapp.com/" target="_blank" rel="noopener">https://portfolio-b4cc1.firebaseapp.com/</a><br><br>
+                <p>
+                  使用言語 / Vue.js<br>
+                  使用エディタ / Visual Studio Code<br>
+                  本番環境 / Firebase <br>
+                  開発環境 / MAMP <br><br>
+                  VueでSPA構築<br>
+                  component指向を意識し各componentにStyle(Sass)<br><br>
+                  作成時間 / 10時間
+                </p>
+              </div>
           </div> 
       </div>
       <div id="item02" class="port">
           <div class="row">
+              <img src="/works/work2.jpg" alt="">
               <div class="description">
                   <h1>カードゲーム(神経衰弱)</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <a href="https://shun-ichirotanaka.github.io/vue_memorygame2/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_memorygame2/</a><br><br>
+                  <p>
+                    使用言語 / Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 /GithubPage <br>
+                    開発環境 / MAMP <br><br>
+                    作成時間 / 5時間
+                  </p>
               </div>
-              <img src="/works/work2.jpg" alt="">
           </div> 
       </div>
       <div id="item03" class="port">
           <div class="row">
+              <img src="/works/work3.jpg" alt="">
               <div class="description">
                   <h1>ECサイト</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-              </div>
-              <img src="/works/work3.jpg" alt="">
+                  <a href="https://e-commerce-94802.firebaseapp.com/" target="_blank" rel="noopener">https://e-commerce-94802.firebaseapp.com/</a><br><br>
+                  <p>
+                    使用言語 / Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / Firebase <br>
+                    開発環境 / MAMP <br><br>
+                    VueでSPA構築<br>
+                    component指向で各componentにStyle(Sass)<br>
+                    axiosを使い非同期通信でのCRUD処理<br>
+                    Stripeを導入し決済機能のシュミレーションを実施<br><br>
+                    作成時間 / 20時間
+                  </p>
+                </div>
           </div> 
       </div>
       <div id="item04" class="port">
           <div class="row">
+              <img src="/works/work4.jpg" alt="">
               <div class="description">
-                  <h1>Item 04</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>電卓</h1>
+                  <a href="https://shun-ichirotanaka.github.io/vue_calculator/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_calculator/</a><br><br>
+                  <p>
+                    使用言語 / Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / GithubPage <br>
+                    開発環境 / MAMP <br><br>
+                    作成時間 / 2時間
+                  </p>
               </div>
               <img src="/works/work4.jpg" alt="">
           </div> 
       </div>
       <div id="item05" class="port">
           <div class="row">
+              <img src="/works/work5.jpg" alt="">
               <div class="description">
-                  <h1>Item 05</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>Music Player</h1>
+                  <a href="https://shun-ichirotanaka.github.io/vue_music/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_music/</a><br><br>
+                  <p>
+                    使用言語 / Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / GithubPage <br>
+                    開発環境 / MAMP <br><br>
+                    シャッフル機能などがまだ追加できていない<br><br>
+                    作成時間 / 10時間
+                  </p>
               </div>
               <img src="/works/work5.jpg" alt="">
           </div> 
       </div>
       <div id="item06" class="port">
           <div class="row">
+              <img src="/works/work6.jpg">
               <div class="description">
-                  <h1>Item 06</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>時計</h1>
+                  <a href="https://shun-ichirotanaka.github.io/vue_clock/" target="_blank" rel="noopener">https://shun-ichirotanaka.github.io/vue_clock/</a><br><br>
+                  <p>
+                    使用言語 / Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / GithubPage <br>
+                    開発環境 / MAMP <br><br>
+                    作成時間 / 0.5時間
+                  </p>
               </div>
               <img src="/works/work6.jpg">
           </div> 
       </div>
       <div id="item07" class="port">
           <div class="row">
-              <div class="description">
-                  <h1>Item 07</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-              </div>
               <iframe width="560" height="500" src="https://www.youtube.com/embed/rYAZzAK-Akw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="description">
+                  <h1>筋斗雲に乗った孫悟空</h1>
+                  <p>
+                    使用ソフト / Adobe AfterEffects <br>
+                    作成時間 / 5時間
+                  </p>
+              </div>
           </div> 
       </div>
       <div id="item08" class="port">
           <div class="row">
-              <div class="description">
-                  <h1>Item 08</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-              </div>
               <img src="/works/work8.jpg">
+              <div class="description">
+                  <h1>Qiita模倣アプリ</h1>
+                  <a href="http://infinite-falls-68145.herokuapp.com/" target="_blank" rel="noopener">http://infinite-falls-68145.herokuapp.com/</a><br><br>
+                  <p>
+                    使用言語 / Laravel , Vue.js<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / heroku <br>
+                    開発環境 / MAMP <br><br>
+                    Ajax,axiosを使った非同期での新規投稿処理をVue.jsで実装<br>
+                    componentでいいね機能やストック機能の実装<br>
+                    1対多や多対多のテーブル設計<br>
+                    現在も開発途中<br><br>
+                    作成時間 / 80時間
+                  </p>
+              </div>
+          </div> 
+      </div>
+      <div id="item09" class="port">
+          <div class="row">
+              <img src="/works/work9.jpg">
+              <div class="description">
+                  <h1>東京理科大学野球部公式HP</h1>
+                  <a href="https://tus-bbc.com/" target="_blank" rel="noopener">https://tus-bbc.com/</a><br><br>
+                  <p>
+                    使用言語 / PHP, Jquery<br>
+                    使用エディタ / Visual Studio Code<br>
+                    本番環境 / Xserver, WordPress <br>
+                    開発環境 / MAMP <br><br>
+                    作成時間 / 10時間
+                  </p>
+              </div>
           </div> 
       </div>
     </section>
@@ -192,15 +279,22 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #8BCAC0;
 }
 
 .row {
   width: 100%;
-  max-width: 1170px;
   margin: 0 auto;
   padding: 0;
   clear: both;
+  @include pc {
+    max-width: 1170px;
+  }
+  @include sp {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .row img {
   max-width: 100%;
@@ -211,8 +305,13 @@ a {
 
 .gallery ul li {
   float: left;
-  margin: 0 0.8771929825%;
   overflow: hidden;
+  @include pc {
+    margin: 0 0.8771929825%;
+  }
+  @include sp {
+  margin: 0 15%;
+  }
 }
 
 .gallery {
@@ -226,8 +325,10 @@ a {
 }
 .gallery ul li {
   margin-bottom: 20px;
-  width: 23.2456140351%;
   position: relative;
+  @include pc {
+    width: 23.2456140351%;
+  }
 }
 .gallery ul li a {
   display: block;
@@ -292,19 +393,35 @@ a {
   transition: all 0.5s ease-in-out;
 }
 .port img {
-  width: 50%;
+  @include pc {
+    width: 50%;
+  }
+  @include sp {
+    width: 100%;
+  }
 }
 .port .description {
   float: left;
-  width: 50%;
   max-height: 100%;
-  padding: 0 40px 40px;
   overflow: auto;
+  @include pc {
+    width: 50%;
+    padding: 0 40px 40px;
+  }
+  @include sp {
+    width: 100%;
+  }
 }
 .port h1 {
-  font-size: 35px;
-  line-height: 2.3;
   padding: 0;
+  @include pc {
+    font-size: 35px;
+    line-height: 2.3;
+  }
+  @include sp {
+    font-size: 25px;
+    line-height: 2;
+  }
 }
 .port > * {
   opacity: 0;

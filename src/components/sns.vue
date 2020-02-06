@@ -50,6 +50,11 @@ $media: 767px;
   -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
           transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
+#sns {
+  @include sp {
+    display: none;
+  }
+}
 .social-btns .btn:before {
   top: 90%;
   left: -110%;
