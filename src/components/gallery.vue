@@ -64,8 +64,8 @@
                   使用エディタ / Visual Studio Code<br>
                   本番環境 / Firebase <br>
                   開発環境 / MAMP <br><br>
-                  VueでSPA構築<br>
-                  component指向を意識し各componentにStyle(Sass)<br><br>
+                  ・VueでSPA構築<br>
+                  ・component指向を意識し各componentにStyle(Sass)<br><br>
                   作成時間 / 10時間
                 </p>
               </div>
@@ -99,7 +99,8 @@
                     使用エディタ / Visual Studio Code<br>
                     本番環境 / Firebase <br>
                     開発環境 / MAMP <br><br>
-                    作成目的 / ECサイト作成は基本的なCRUD処理が学ベるほか興味があった。<br>
+                    作成目的 /
+                    ECサイト作成は基本的なCRUD処理が学ベるほか興味があった。<br>
                     ・VueでSPA構築<br>
                     ・babelでjsとsassのコンパイル<br>
                     ・component指向で各componentにStyle(Sass)<br>
@@ -185,8 +186,9 @@
                     使用エディタ / Visual Studio Code<br>
                     本番環境 / heroku <br>
                     開発環境 / MAMP <br>
-                    作成目的 / 設計から実装まで自分自身で考え完成まで至る実力と自信をつける為 <br><br>
-                    。Ajax,axiosを使った非同期での新規投稿処理をVue.jsで実装<br>
+                    作成目的 /
+                    設計から実装まで自分自身で考え完成まで至る実力と自信をつける為 <br><br>
+                    ・Ajax,axiosを使った非同期での新規投稿処理をVue.jsで実装<br>
                     ・componentでいいね機能やストック機能の実装<br>
                     ・Sass設計はFLOCSS、命名規則はBEM<br>
                     ・LaravelMixでコンパイル<br>

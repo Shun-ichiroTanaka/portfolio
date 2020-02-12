@@ -55,37 +55,44 @@ $media: 767px;
     display: none;
   }
 }
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn svg {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59) !important;
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59) !important;
+}
 .social-btns .btn:before {
   top: 90%;
   left: -110%;
 }
 .social-btns .btn svg {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.8) !important;
+          transform: scale(0.8) !important;
 }
 .social-btns .btn.github:before {
-  background-color: #070709;
-  font-size: 1rem;
+  background-color: #302f2f;
 }
 .social-btns .btn.github svg {
-  color: #070709;
-  width:50px;
-  height: 50px;
+  color: #302f2f;
+  width: 50px;
 }
 .social-btns .btn.twitter:before {
   background-color: #3cf;
 }
 .social-btns .btn.twitter svg {
   color: #3cf;
-  width:50px;
-  height: 50px;
+  width: 40px;
 }
+
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
   top: -10%;
   left: -10%;
 }
-.social-btns .btn:focus .fa,
+.social-btns .btn:focus svg,
 .social-btns .btn:hover svg {
   color: #fff;
   -webkit-transform: scale(1);
@@ -121,12 +128,13 @@ $media: 767px;
   width: 120%;
   height: 120%;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
 }
 .social-btns .btn svg {
   font-size: 38px;
   vertical-align: middle;
 }
+
 
 </style>
