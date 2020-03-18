@@ -1,37 +1,66 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Top from './views/Top.vue'
+
+import Home from './views/Home.vue'
+import About from './views/About.vue'
+import Myworks from './views/Myworks.vue'
+import Work1 from "./components/works/Work1.vue";
+import Work2 from "./components/works/Work2.vue";
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'top',
-      component: Top
+      path: "/",
+      name: "home",
+      component: Home
     },
     {
-      path: '/home',
-      name: 'home',
-      component: () => import( /* webpackChunkName: "about" */ './views/Home.vue')
+      path: "/about",
+      name: "about",
+      component: About
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: "/works",
+      name: "myworks",
+      component: Myworks
     },
     {
-      path: '/works',
-      name: 'Myworks',
-      component: () => import(/* webpackChunkName: "about" */ './views/Myworks.vue')
+      path: "/contact",
+      name: "contact",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Contact.vue")
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue')
+      path: "/shops",
+      name: "shop",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Shops.vue")
+    },
+    {
+      path: "/suggest",
+      name: "suggest",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Suggest.vue")
+    },
+    {
+      path: "/hover",
+      name: "hover",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Hover.vue")
+    },
+    {
+      path: "/work1",
+      name: "work1",
+      component: Work1
+    },
+    {
+      path: "/work2",
+      name: "work2",
+      component: Work2
     },
   ]
-})
+});

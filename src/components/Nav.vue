@@ -14,7 +14,10 @@
             <h4>Home</h4>
             <ul>
               <li>
-                <a href="/"><img src="/home/home.svg" alt="" width="200"></a>
+                <a href="/">Home</a><br>
+                <a href="https://twitter.com/tana_fe" target="_blank" rel="noopener">Twitter</a><br>
+                <a href="https://github.com/Shun-ichiroTanaka/" target="_blank" rel="noopener">Github</a><br>
+                <a href="https://qiita.com/tana08" target="_blank" rel="noopener">Qiita</a><br>
               </li>
             </ul>
           </div>
@@ -22,13 +25,15 @@
             <h4>Works</h4>
             <ul>
               <li>
-                <a href="/works"><img src="/home/works.svg" alt="" width="200"></a>
+                <a href="/works" target="_blank" rel="noopener">All Works</a><br>
+                <a href="/shops" target="_blank" rel="noopener">Shopping Site</a><br>
+                <a href="/suggest" target="_blank" rel="noopener">Suggest</a><br>
+                <a href="/hover" target="_blank" rel="noopener">hover</a><br>
+                <a href="/work1" target="_blank" rel="noopener">cart img hover</a><br>
+                <a href="/work2" target="_blank" rel="noopener">add cart quantity icon</a><br>
               </li>
             </ul>
           </div>
-          <!-- sns -->
-          <sns></sns>
-          <a href="https://qiita.com/Shun-ichiro" target="_blank" rel="noopener">Qiita</a>
         </nav>
       </div>
     </header>
@@ -306,9 +311,9 @@ header {
 }
 #site-nav a {
   text-decoration:none;
-  font-size:1.5rem;
-  font-weight:700;
-  color: #8DCBC1;
+  // font-size:1.5rem;
+  // font-weight:700;
+  // color: #8DCBC1;
   @include sp {
     padding-bottom: 20px;
   }
