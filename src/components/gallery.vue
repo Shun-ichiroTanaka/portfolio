@@ -282,7 +282,7 @@ $media: 767px;
   box-sizing: border-box;
 }
 
-body {
+#gallery {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 1.5;
@@ -292,7 +292,7 @@ body {
 a {
   color: #8BCAC0;
 }
-
+.gallery {
 .row {
   width: 100%;
   margin: 0 auto;
@@ -313,6 +313,8 @@ a {
   padding: 0;
   margin: 0;
 }
+}
+
 
 .gallery ul li {
   float: left;

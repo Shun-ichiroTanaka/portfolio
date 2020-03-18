@@ -167,14 +167,14 @@ body,
 #app {
   position: relative;
   z-index: -1;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Kaushan Script", cursive !important;
-  color: #fff !important;
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
   h4 {
-    color: #000 !important;
+    color: #000;
   }
 }
 #main {
@@ -197,14 +197,14 @@ h1 {
 #vue-typer {
   display: inline-block;
   margin-top: 20px;
-  color: #fff !important;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy !important;
+  color: #fff;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-size: .5em;
-  white-space: nowrap !important;
+  white-space: nowrap;
   .custom.char.typed {
-    word-break: break-all !important;
-    color: #fff !important;
-    overflow-wrap: break-word !important;
+    word-break: break-all;
+    color: #fff;
+    overflow-wrap: break-word;
   }
 }
 #time {

@@ -71,138 +71,177 @@ export default {
 @import "https://fonts.googleapis.com/css?family=Roboto:400,500";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
-html,
-body,
-div,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-ol,
-ul,
-li,
-form,
-legend,
-label,
-table,
-header,
-footer,
-nav,
-section,
-figure {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-// メディアクエリ
-$media: 767px;
-@mixin pc {
-  @media (min-width: ($media)) {
-    @content;
-  }
-}
-@mixin sp {
-  @media (max-width: ($media)) {
-    @content;
-  }
-}
-
-p {
-  font-family: "Open Sans", 'Noto Sans JP', sans-serif !important;
-  color: #2c3e50 !important;
-}
-
-.overlay-left,
-.overlay-right,
-.overlay-top,
-.overlay-bottom {
-  background: #7FDBD0 !important;
-  z-index: 1000;
-}
-
-.custom.char.typed {
-  color: #2c3e50 !important;
-}
-
-:root {
-  --transition-duration: .5s !important;
-}
-
-#app {
-  color: #2c3e50;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#mt {
-  &100 {
-    margin-top: 100px;
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit
   }
 
-  &50 {
-    margin-top: 50px;
+  * {
+    font: inherit
   }
 
-}
-
-.section1 {
-  & img {
-    max-width: 80vw;
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video,
+  hr {
+    margin: 0;
+    padding: 0;
+    border: 0
   }
-}
 
-#gotop {
-  background: #2c3e50 !important;
-}
+  html {
+    box-sizing: border-box
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  main,
+  form legend {
+    display: block
+  }
 
-// =============================== vue-transition
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 1s;
-}
+  ol,
+  ul {
+    list-style: none
+  }
 
-.v-enter,
-.v-leave-to {
-  opacity: 0;
-}
+  blockquote,
+  q {
+    quotes: none
+  }
 
-.v-enter {
-  transform: translate(0, -120px);
-  opacity: 0;
-}
+  button,
+  input,
+  textarea,
+  select {
+    margin: 0
+  }
 
-.v-enter-to {
-  opacity: 1;
-}
+  .btn,
+  .form-control,
+  .link,
+  .reset {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+  }
 
-.v-enter-active {
-  transition: all 1s 0s ease;
-}
+  select.form-control::-ms-expand {
+    display: none
+  }
 
-.v-leave {
-  transform: translate(0, 0);
-  opacity: 1;
-}
+  textarea {
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top
+  }
 
-.v-leave-to {
-  transform: translate(0, 120px);
-  opacity: 0;
-}
+  input::-ms-clear {
+    display: none
+  }
 
-.v-leave-active {
-  transition: all 1s 0s ease;
-}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0
+  }
 
-// =============================== vue-transition
-@include pc {
-};
-@include sp {
-};
+  img,
+  video,
+  svg {
+    max-width: 100%
+  }
 </style>

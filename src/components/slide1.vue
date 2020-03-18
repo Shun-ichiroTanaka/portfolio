@@ -327,7 +327,7 @@ $mq-xlarge: 91em;
 //-------------------------------
 //  Body, prevent scrolling
 //-------------------------------
-body{
+#slide {
   height: 100%;
   overflow-y:hidden;
 }
